@@ -39,8 +39,11 @@ hr {
     background-color: lightseagreen;
     }
 
-nav ul {
+nav {
     position: sticky;
+}
+
+nav ul {
     list-style: none;
     letter-spacing: 0.1em;
     padding: 0;
