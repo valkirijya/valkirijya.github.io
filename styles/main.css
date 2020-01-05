@@ -19,6 +19,7 @@ main {
     }
 
 header {
+    position: fixed;
     width: 100%;
     background-color: #f16464;
     box-shadow: 2px 0px 15px 5px #e9f0f3;
