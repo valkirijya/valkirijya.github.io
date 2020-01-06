@@ -1,49 +1,44 @@
 * {
-    
     box-sizing: border-box;
     }
 
 body {
     font-size: 1.2em;
     font-family: 'Amatic SC', cursive;
-    background-color:lightseagreen;
-    color: #fff;
+    color: #607d8b;
+    background-color: white;
     margin: 0;
     padding: 0;
- 
+    background-image: url("../images/heading.png");
+    background-size: cover;
     }
 
-main {
-    width: 1200px;
-    margin: 120px auto 0 auto;
-    }
-
-header {
-    position: fixed;
+header, nav {
     width: 100%;
-    background-color: #f16464;
+    color: #fff;
+    background-color:#fc6363c5;
     box-shadow: 2px 0px 15px 5px #e9f0f3;
     }
 
 header h1, header h3 {
     text-align: center;
-    margin: 20px 0;
+    margin: 83px;
     font-size: 4em;
     }
+
+#bgimg {
+    
+}
 
 header h3{
     font-size: 1.5em;
     letter-spacing: 0.2em;
     }
 
-hr {
-    background-color: lightseagreen;
+nav{
+    position: fixed;
+    top: 6px;
     }
-
-nav {
-    position: sticky;
-    top: 300px;
-}
 
 nav ul {
     list-style: none;
@@ -61,6 +56,7 @@ nav a:hover {
     color: rgb(3, 15, 15);
     text-decoration: underline;
     }
+
 .active_page {
     color: #000;
 }
@@ -92,7 +88,7 @@ nav a:hover {
 ul.submenu {
     width: 180px;
     padding-left: 50px;
-    background-color: #fc6363c5;
+    background-color:#ff7c7c;
     }
       
 .top_menu > li:hover .submenu{
