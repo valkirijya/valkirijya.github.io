@@ -8,8 +8,8 @@ body {
     color: rgb(155, 24, 24);
     margin: 0;
     padding: 0;
-    background-image: url("../images/bg.png");
-    background-size: 100%;
+    background-image: url("../images/bg.webp");
+    background-size: cover;
     background-repeat: repeat-y;
     }
 
