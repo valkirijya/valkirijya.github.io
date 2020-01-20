@@ -10,7 +10,8 @@ body {
     padding: 0;
     background-image: url("../images/bg.webp");
     background-size: cover;
-    background-repeat: repeat-y;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
     }
 
 header, nav {
