@@ -4,11 +4,12 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Виталина Невская | дизайнер | художник | блоггер</title>
-    <link rel="stylesheet" href="styles/main.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/index-st.css">
   </head>
 
   <body>
@@ -49,42 +50,23 @@
       </svg>
       <h2>Всем привет!</h2>
     </section>
-    
+
     <section class="center">
-        <img class="selfi-im" src="images/selfi.jpg">
+      <img class="selfi-im" src="images/selfi.jpg" />
     </section>
 
-
-    <a href="#" class="scroll-top-btn " id="scroll-top-button" onclick="document.fireEvent('scrollToTopClick');" style="visibility: visible; zoom: 1;">
-        <img src="images/scroll-btn.svg" class="scroll-top-btn-icon" alt="▲">
+    <a
+      href="#"
+      class="scroll-top-btn "
+      id="scroll-top-button"
+      onclick="document.fireEvent('scrollToTopClick');"
+      style="visibility: visible; zoom: 1;"
+    >
+      <img src="images/scroll-btn.svg" class="scroll-top-btn-icon" alt="▲" />
     </a>
-    <script>
-      var scroll_fx = new Fx.Scroll(window);
-var to_top = $('scroll-top-button');
-
-to_top.addEvent('click', function() {
-    scroll_fx.toTop();
-});
-
-var checkScroll = function() {
-    var body_scroll = document.body.getScroll();
-    if(body_scroll.y > 150) {
-        to_top.removeClass('hidden');
-    } else {
-        to_top.addClass('hidden');
-    }
-};
-
-checkScroll();
-
-window.addEvent('scroll', function(e) {
-    checkScroll();
-});
-    </script>
-
+   
     <footer class="footer-layout">
-        <p>Все права защищены</p>
+      <p>Все права защищены</p>
     </footer>
-
   </body>
 </html>

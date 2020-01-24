@@ -1,0 +1,14 @@
+figure {
+    float: left;
+    padding: 20px;
+    margin: 15px;
+    background-color: rgba(133, 138, 138, 0.281);
+    height: 27em;
+    color: rgb(3, 15, 15);
+    border: 3px solid black;
+  }
+  
+  figure > img {
+    height: 18em;
+    border: 6px solid rgba(255, 255, 255, 0.781);
+  }
