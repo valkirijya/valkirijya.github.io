@@ -9,33 +9,31 @@
       href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap"
     />
     <link rel="stylesheet" href="styles/main.css" />
-    <link rel="stylesheet" href="styles/works-st.css" />
+    <link rel="stylesheet" href="styles/design-st.css" />
   </head>
 
-  <body>
-    <header>
-      <nav>
-        <ul class="top_menu" title="Навигация">
-          <li><a href="avtobiografiy.html">Автобиография</a></li>
-          <li class="active_page">Работы</li>
-          <li><a href="gallery.html">Галерея</a></li>
-          <li>
-            <a href="#">Блог</a>
-            <ul class="submenu">
-              <li><a href="blog_o_lichnom.html">О личном</a></li>
-              <li><a href="blog_lifehack.html">Лайфхаки</a></li>
-            </ul>
-          </li>
-          <li><a href="contact.html">Контакты</a></li>
-        </ul>
-      </nav>
+  <body class="grid-container">
+    <nav class="navigation">
+      <ul class="top_menu" title="Навигация">
+        <li class="active_page">Дизайн</li>
+        <li>
+          <a href="#">Галерея</a>
+          <ul class="submenu">
+            <li><a href="foto.html">Мои фото</a></li>
+            <li><a href="paintings.html">Картины</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html">Контакты</a></li>
+      </ul>
+    </nav>
+    <header class="header">
       <h1 title="Главная страница">
         <a href="index.html">Виталина Невская</a>
       </h1>
       <h3 title="Специализация">дизайнер | художник | блоггер</h3>
     </header>
 
-    <section>
+    <section class="title">
       <svg width="100%" height="54">
         <rect width="100%" height="100" fill="rgba(255, 255, 255, 0.527)">
           <animate
@@ -53,7 +51,7 @@
       </h2>
     </section>
 
-    <section>
+    <section class="section">
       <figure>
         <h4>Детская в пастельных тонах</h4>
         <img
@@ -135,17 +133,17 @@
     </section>
 
     <a
-    href="#"
-    class="scroll-top-btn "
-    id="scroll-top-button"
-    onclick="document.fireEvent('scrollToTopClick');"
-    style="visibility: visible; zoom: 1;"
-  >
-    <img src="images/scroll-btn.svg" class="scroll-top-btn-icon" alt="▲" />
-  </a>
+      href="#"
+      class="scroll-top-btn "
+      id="scroll-top-button"
+      onclick="document.fireEvent('scrollToTopClick');"
+      style="visibility: visible; zoom: 1;"
+    >
+      <img src="images/scroll-btn.svg" class="scroll-top-btn-icon" alt="▲" />
+    </a>
 
-    <footer class="footer-layout">
-      <p>Все права защищены</p>
+    <footer class="footer">
+      <p>- Все права защищены - <br />&copy; 2020</p>
     </footer>
   </body>
 </html>

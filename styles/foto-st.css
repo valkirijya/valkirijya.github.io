@@ -20,11 +20,13 @@
 }
 
  .scale:hover {
-  transform: scale(2.05);
+  transform: scale(.6);
   background-color: rgba(0, 0, 0, 0.521);
-  transform-origin: 10vw 10vw;
+  transform-origin: 1vw 1vw;
   position: absolute;
-  /*transition: 2s;*/
+  top: auto;
+  left: 20%;
+  transition: 0s;
  }
  
 @media (max-width: 800px) {

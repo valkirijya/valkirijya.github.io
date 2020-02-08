@@ -1,0 +1,50 @@
+form {
+  font-size: 1.3em;
+  height: 32vw;
+  width: 55vw;
+  text-align: center;
+  margin: 30px auto 50px auto;
+  padding: 20px;
+  border: 2px solid black;
+  background-color: rgba(133, 138, 138, 0.281);
+  color: rgb(3, 15, 15);
+  font-family: "Amatic SC", cursive;
+  box-shadow: 6px 6px 10px 5px #6b6d6da6;
+  font-weight: bold;
+}
+
+#name,
+#email,
+#text {
+  height: 3vw;
+  width: 18vw;
+  font-size: 0.9em;
+  margin: 10px 20px 10px 20px;
+  outline-color: black;
+  font-family: "Amatic SC", cursive;
+  text-align: center;
+  box-shadow: 6px 6px 10px 5px #6b6d6da6;
+}
+
+#text {
+  height: 10vw;
+  width: 40vw;
+  text-align: left;
+}
+
+#submit {
+  height: 50px;
+  width: 150px;
+  font-size: 0.9em;
+  margin-bottom: 13px;
+  cursor: pointer;
+  font-family: "Amatic SC", cursive;
+  border: 2px solid black;
+  box-shadow: 8px 8px 10px 4px #636b6b;
+}
+
+#submit:hover {
+  background-color: #fc6363;
+  box-shadow: 0px 0px 10px 6px #f8fcfc;
+  color: #fff;
+}

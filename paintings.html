@@ -9,8 +9,6 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles/main.css" />
-    <link rel="stylesheet" href="styles/contact.css" />
-    <script async src="scripts/cheking_form.js"></script>
   </head>
 
   <body class="grid-container">
@@ -21,10 +19,10 @@
           <a href="#">Галерея</a>
           <ul class="submenu">
             <li><a href="foto.html">Мои фото</a></li>
-            <li><a href="paintings.html">Картины</a></li>
+            <li class="active_page">Картины</li>
           </ul>
         </li>
-        <li class="active_page">Контакты</li>
+        <li><a href="contact.html">Контакты</a></li>
       </ul>
     </nav>
     <header class="header">
@@ -39,7 +37,7 @@
         <rect width="100%" height="100" fill="rgba(255, 255, 255, 0.527)">
           <animate
             attributeName="x"
-            from="0"
+            form="0"
             to="100%"
             dur="2s"
             fill="freeze"
@@ -47,35 +45,10 @@
           />
         </rect>
       </svg>
-      <h2>Есть вопросы - пишите</h2>
+      <h2>Как сделать жизнь проще, мелочь а приятно</h2>
     </section>
 
-    <form class="section">
-      <div>
-        <input id="name" placeholder="Ваше имя" autofocus required />
-        <input
-          id="email"
-          type="email"
-          name="email"
-          placeholder="email@example.com"
-          required
-        />
-      </div>
-      <div>
-        <label for="text">Текст сообщения:<br /></label>
-        <textarea
-          id="text"
-          name="message"
-          placeholder="Пишите возникшие вопросы в этом месте"
-          required
-        ></textarea>
-      </div>
-      <p></p>
-      <br />
-      <div>
-        <input id="submit" type="submit" value="Отправить" />
-      </div>
-    </form>
+    <section class="section"></section>
 
     <a
       href="#"
