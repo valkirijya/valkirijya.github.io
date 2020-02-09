@@ -1,7 +1,7 @@
 form {
   font-size: 1.3em;
   height: 32vw;
-  width: 55vw;
+  width: 50vw;
   text-align: center;
   margin: 30px auto 50px auto;
   padding: 20px;
@@ -9,8 +9,9 @@ form {
   background-color: rgba(133, 138, 138, 0.281);
   color: rgb(3, 15, 15);
   font-family: "Amatic SC", cursive;
-  box-shadow: 6px 6px 10px 5px #6b6d6da6;
   font-weight: bold;
+  background-image: url("../images/lines.webp");
+  background-size: cover;
 }
 
 #name,

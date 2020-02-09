@@ -6,37 +6,12 @@
   display: grid;
   grid-template-areas:
     "navigation navigation navigation navigation"
-    "header header header header"
-    "title title title title"
-    "section section section section"
-    "footer footer footer footer";
-  grid-template-rows: 5vw 12vw 4.6vw auto 8vw;
+    "header     header     header     header"
+    "title      title      title      title"
+    "section    section    section    section"
+    "footer     footer     footer     footer";
+  grid-template-rows: 4.5vw 10vw 3.5vw auto 5vw;
   grid-template-columns: repeat(4, 1fr);
-}
-.navigation {
-  grid-area: navigation;
-}
-.header {
-  grid-area: header;
-}
-.title {
-  grid-area: title;
-}
-.section {
-  grid-area: section;
-}
-.footer {
-  grid-area: footer;
-  text-align: center;
-  background-color: rgb(48, 47, 47);
-  color: rgb(189, 187, 187);
-  box-shadow: 3px 1px 15px 5px #494848;
-  border-top: 1px solid rgb(138, 143, 143);
-}
-
-body {
-  width: 100%;
-  font-size: 1.4em;
   font-family: "Amatic SC", cursive;
   color: rgb(3, 15, 15);
   margin: 0;
@@ -46,18 +21,51 @@ body {
   background-size: cover;
   background-attachment: fixed;
 }
+.navigation {
+  grid-area: navigation;
+  font-size: 1.4em;
+  width: 100%;
+  position: fixed;
+  top: 5px;
+  letter-spacing: 0.5em;
+  font-weight: 550;
+}
+.header {
+  grid-area: header;
+}
+.title {
+  grid-area: title;
+  margin: 0;
+  letter-spacing: 0.1em;
+  text-align: center;
+   background-color: rgba(133, 138, 138, 0.281);
+}
+.section {
+  grid-area: section;
+}
 
-header,
-nav {
+.footer {
+  grid-area: footer;
+  margin-top: 0.5vw;
+  text-align: center;
+  background-color: rgb(48, 47, 47);
+  color: rgb(189, 187, 187);
+  box-shadow: 3px 1px 15px 5px #494848;
+  border-top: 1px solid rgb(138, 143, 143);
+}
+
+.header,
+.navigation {
   color: #fff;
   background-color: #fc6363c5;
   box-shadow: 2px 0px 15px 5px #e9f0f3;
+  text-align: center;
 }
 
 h1 {
-  margin: 0px 0 0 0;
+  margin: 0;
   padding: 0;
-  font-size: 4em;
+  font-size: 5em;
   text-shadow: 12px 12px 9px rgb(52, 56, 56);
 }
 
@@ -70,39 +78,17 @@ h1 > a:hover {
   color: rgb(48, 46, 46);
 }
 
-h1,
 h3 {
-  text-align: center;
-}
-
-h3 {
-  font-size: 1.1em;
+  font-size: 1.4em;
   letter-spacing: 0.2em;
   margin: 0 0 5px 0;
   padding-bottom: 7px;
-}
-
-h2 {
-  margin: 5px 0px 5px 0px;
-  padding: 7px;
-  letter-spacing: 0.1em;
-  text-align: center;
-  font-size: 1.4em;
-  color: black;
-  background-color: rgba(133, 138, 138, 0.281);
 }
 
 h4 {
   font-size: 1.2em;
   margin: 15px;
   padding: 0;
-}
-
-nav {
-  width: 100%;
-  position: fixed;
-  top: 5px;
-  z-index: 4;
 }
 
 nav ul {
@@ -123,28 +109,39 @@ nav a:hover {
 }
 
 svg {
+  width: 100%;
+  height: 47.8px;
   position: absolute;
-  margin: 0;
+  margin-left: -50%;
   padding: 0;
+  box-shadow: 6px 6px 10px 5px #e3e6e669;
 }
 
-/*svg > rect {
-  width: 0;
-  height: 100 px;
+rect {
+  width: 100%;
+  height: 100%;
   fill: rgba(255, 255, 255, 0.527);
-  animation: x 2s linear 1s 2 65 100% freeze;
-}*/
+  transition-duration: 2s;
+}
+
+.hed {
+  margin: 0;
+  padding: 7px;
+  font-size: 1.7em;
+  font-weight: bold;
+}
 
 .active_page {
   color: rgb(3, 15, 15);
 }
 
 .top_menu {
-  width: 800px;
+  width: 42vw;
+  height: 2.5vw;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   text-align: center;
-  margin: 10px auto;
+  margin: 8px auto;
 }
 
 .top_menu > li {
@@ -158,7 +155,7 @@ svg {
   transform: scaleY(0);
   transform-origin: 0 0;
   transition: 0.3s linear;
-  line-height: 2em;
+  line-height: 1.6em;
   border-radius: 3%;
 }
 

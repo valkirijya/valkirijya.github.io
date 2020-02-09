@@ -3,8 +3,7 @@ let name = document.getElementById("name");
 let submit = document.getElementById("submit");
 let para = document.querySelector("p");
 
-form.onsubmit = function submitEvent(e) {
-  dispatchEvent(e);
+function submitEvent() {
   let names = Number(name.value);
   if (names === 1) {
     para.textContent = "Поле с именем не может содержать цмфры!";
@@ -15,3 +14,4 @@ form.onsubmit = function submitEvent(e) {
     console.log("Письмо отправлено. В скором времени Вам ответят.");
   }
 };
+form.onsubmit = submitEvent;
