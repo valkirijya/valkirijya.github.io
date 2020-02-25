@@ -1,14 +1,42 @@
+.section {
+  margin: 10px;
+}
+
 figure {
-    float: left;
-    padding: 20px;
-    margin: 15px;
-    background-color: rgba(133, 138, 138, 0.281);
-    height: 27em;
-    color: rgb(3, 15, 15);
-    border: 3px solid black;
-  }
-  
-  figure > img {
-    height: 18em;
-    border: 6px solid rgba(255, 255, 255, 0.781);
+  padding: 20px;
+  margin: 30px 15px;
+  background-color: rgba(133, 138, 138, 0.281);
+  height: auto;
+  color: rgb(3, 15, 15);
+  border: 3px solid black;
+  text-align: center;
+}
+
+
+figure img {
+  width: 39vw;
+  border: 6px solid rgba(255, 255, 255, 0.781);
+}
+
+.description {
+  font-weight: 600;
+  font-size: 1.3em;
+  text-align: left;
+  padding: 10px;
+}
+
+figcaption {
+  font-size: 1.2em;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 10px;
+  justify-content: center;
+}
+
+.column {
+  flex: 48%;
+  max-width: 48%;
   }

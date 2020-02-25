@@ -14,4 +14,4 @@ function submitEvent() {
     console.log("Письмо отправлено. В скором времени Вам ответят.");
   }
 };
-form.onsubmit = submitEvent;
+submit.addEventListener("submit", submitEvent);

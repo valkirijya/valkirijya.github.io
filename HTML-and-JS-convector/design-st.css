@@ -1,0 +1,45 @@
+.section {
+  margin: 10px;
+}
+
+figure {
+  padding: 20px;
+  margin: 30px 15px;
+  background-color: rgba(133, 138, 138, 0.281);
+  height: auto;
+  color: rgb(3, 15, 15);
+  border: 3px solid black;
+  text-align: center;
+  font-size: 1.5em;
+  float: left;
+  width: 45%;
+  height: 750px;
+}
+
+figure > img {
+  width: 40.5vw;
+  border: 6px solid rgba(255, 255, 255, 0.781);
+}
+
+.description {
+  font-weight: 600;
+  font-size: 1.3em;
+  text-align: left;
+  padding: 10px;
+}
+
+figcaption {
+  font-size: 1.2em;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 10px;
+  justify-content: space-between;
+}
+
+.column {
+  flex: 50%;
+  max-width: 50%;
+  }

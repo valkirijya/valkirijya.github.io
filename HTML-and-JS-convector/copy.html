@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Виталина Невская | дизайнер | художник | блоггер</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="design-st.css" />
+    <script async src="copy.js"></script>
+  </head>
+
+  <body class="grid-container" onload="getCourses()">
+    <nav class="navigation">
+      <ul class="top_menu" title="Навигация">
+        <li class="active_page">Дизайн</li>
+        <li>
+          <a href="#">Галерея</a>
+          <ul class="submenu">
+            <li><a href="foto.html">Мои фото</a></li>
+            <li><a href="paintings.html">Картины</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html">Контакты</a></li>
+      </ul>
+    </nav>
+
+    <section class="section" style="min-height: 37vw;">
+      <div class="content" style="float: left;">
+        <div class="exchange">
+          <div>
+            <label for="currencyCode">Конвертировать в:</label>
+            <select id="currencyCode"> </select>
+            <button>OK</button>
+          </div>
+        </div>
+      </div>
+      <div style="text-align: right;">
+        <input
+          type="number"
+          placeholder="Количество блоков"
+          autofocus
+          required
+        />
+        <button>OK</button>
+        <br />
+      </div>
+      <rows class="rows"> </rows>
+    </section>
+
+    <a
+      href="#"
+      class="scroll-top-btn "
+      id="scroll-top-button"
+      onclick="document.fireEvent('scrollToTopClick');"
+      style="visibility: visible; zoom: 1;"
+    >
+    </a>
+
+    <footer class="footer">
+      <p>&copy; 2020<br />- Все права защищены -</p>
+    </footer>
+  </body>
+</html>

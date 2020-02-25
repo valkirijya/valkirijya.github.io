@@ -2,6 +2,12 @@
     margin: 1vw;
     border-radius: 50%;
     border: 20px double rgba(10, 10, 10, 0.568);
+    width: 50%;
+  }
+
+  .section {
+    text-align: center;
+    min-height: 60vw;
   }
   
   
