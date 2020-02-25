@@ -28,6 +28,7 @@
   background-color: rgba(0, 0, 0, 0.521);
  }
  
+ 
 @media (max-width: 800px) {
   .column {
     flex: 45%;
