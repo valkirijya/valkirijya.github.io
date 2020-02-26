@@ -3,15 +3,16 @@ form {
   height: 32vw;
   width: 50vw;
   text-align: center;
-  margin: 30px auto 50px auto;
+  margin: 7% auto 50px auto;
   padding: 20px;
   border: 2px solid black;
   background-color: rgba(133, 138, 138, 0.281);
   color: rgb(3, 15, 15);
   font-family: "Amatic SC", cursive;
   font-weight: bold;
-  background-image: url("../images/lines.webp");
+  background-image: url("../images/");
   background-size: cover;
+  position: relative;
 }
 
 #name,

@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+    <link rel="shortcut icon" href="images/firebase.png" type="image/png" />
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Виталина Невская | дизайнер | художник | блоггер</title>
     <link
       href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap"
@@ -13,7 +14,7 @@
     <script async src="scripts/cheking_form.js"></script>
   </head>
 
-  <body class="grid-container">
+  <body class="container">
     <nav class="navigation">
       <ul class="top_menu" title="Навигация">
         <li><a href="design.html">Дизайн</a></li>
@@ -47,48 +48,61 @@
           />
         </rect>
       </svg>
+      <svg>
+        <rect class="second">
+          <animate
+            attributeName="x"
+            from="100%"
+            to="0"
+            dur="2s"
+            fill="freeze"
+            repeatCount="1"
+          />
+        </rect>
+      </svg>
       <p class="hed">Есть вопросы - пишите</p>
     </section>
 
-    <form class="section">
-      <div>
-        <input id="name" type="text" placeholder="Ваше имя" autofocus required />
-        <input
-          id="email"
-          type="email"
-          name="email"
-          placeholder="email@example.com"
-          required
-        />
-      </div>
-      <div>
-        <label for="text">Текст сообщения:<br /></label>
-        <textarea
-          id="text"
-          name="message"
-          placeholder="Пишите возникшие вопросы в этом месте"
-          required
-        ></textarea>
-      </div>
-      <p></p>
-      <br />
-      <div>
-        <input id="submit" type="submit" value="Отправить" />
-      </div>
-    </form>
-
-    <a
-      href="#"
-      class="scroll-top-btn "
-      id="scroll-top-button"
-      onclick="document.fireEvent('scrollToTopClick');"
-      style="visibility: visible; zoom: 1;"
-    >
+    <section class="section">
+      <form>
+        <div>
+          <input
+            id="name"
+            type="text"
+            placeholder="Ваше имя"
+            autofocus
+            required
+          />
+          <input
+            id="email"
+            type="email"
+            name="email"
+            placeholder="email@example.com"
+            required
+          />
+        </div>
+        <div>
+          <label for="text">Текст сообщения:<br /></label>
+          <textarea
+            id="text"
+            name="message"
+            placeholder="Пишите возникшие вопросы в этом месте"
+            required
+          ></textarea>
+        </div>
+        <p></p>
+        <br />
+        <div>
+          <input id="submit" type="submit" value="Отправить" />
+        </div>
+      </form>
+    </section>
+    <a href="#" class="scroll-top-btn ">
       <img src="images/scroll.svg" class="scroll-top-btn-icon" alt="▲" />
     </a>
 
     <footer class="footer">
-      <p>&copy; 2020<br>- Все права защищены -</p>
+      <p>&copy; 2020<br />- Все права защищены -</p>
     </footer>
   </body>
 </html>

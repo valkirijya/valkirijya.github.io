@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+    <link rel="shortcut icon" href="images/firebase.png" type="image/png" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Виталина Невская | дизайнер | художник | блоггер</title>
@@ -14,7 +15,7 @@
     <script async src="scripts/main.js"></script>
   </head>
 
-  <body class="grid-container">
+  <body class="container">
     <nav class="navigation">
       <ul class="top_menu" title="Навигация">
         <li><a href="design.html">Дизайн</a></li>
@@ -38,8 +39,20 @@
         <rect>
           <animate
             attributeName="x"
-            form="0"
+            from="0"
             to="100%"
+            dur="2s"
+            fill="freeze"
+            repeatCount="1"
+          />
+        </rect>
+      </svg>
+      <svg>
+        <rect class="second">
+          <animate
+            attributeName="x"
+            from="100%"
+            to="0"
             dur="2s"
             fill="freeze"
             repeatCount="1"
@@ -53,11 +66,7 @@
       <img src="images/selfi.jpg" class="selfi-im" />
     </section>
 
-    <a
-      href="#"
-      class="scroll-top-btn"
-      onclick="document.fireEvent('scrollToTopClick');"
-    >
+    <a href="#" class="scroll-top-btn">
       <img src="images/scroll.svg" class="scroll-top-btn-icon" alt="▲" />
     </a>
 

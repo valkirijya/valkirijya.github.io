@@ -1,22 +1,19 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+    <link rel="shortcut icon" href="images/firebase.png" type="image/png" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Виталина Невская | дизайнер | художник | блоггер</title>
-    <link rel="shortcut icon" href="images/icons.gif" type="image/gif">
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap"
     />
     <link rel="stylesheet" href="styles/main.css" />
     <link rel="stylesheet" href="styles/design-st.css" />
-    <link rel="stylesheet" href="ism/css/my-slider.css"/>
-    <script src="ism/js/ism-2.2.min.js"></script>
-    
   </head>
 
-  <body class="grid-container">
+  <body class="container">
     <nav class="navigation">
       <ul class="top_menu" title="Навигация">
         <li class="active_page">Дизайн</li>
@@ -44,6 +41,18 @@
             attributeName="x"
             form="0"
             to="100%"
+            dur="2s"
+            fill="freeze"
+            repeatCount="1"
+          />
+        </rect>
+      </svg>
+      <svg>
+        <rect class="second">
+          <animate
+            attributeName="x"
+            from="100%"
+            to="0"
             dur="2s"
             fill="freeze"
             repeatCount="1"
@@ -83,9 +92,9 @@
           <figure>
             <h4>Спальня в стиле лофт</h4>
             <img
-            src="images/exampl/dizajn-spalni-v-stile-loft-27.jpg"
-            alt="Спальня в сером цвете, с потолка свисают светильники над тумбочками у кровати"
-          />
+              src="images/exampl/dizajn-spalni-v-stile-loft-27.jpg"
+              alt="Спальня в сером цвете, с потолка свисают светильники над тумбочками у кровати"
+            />
             <figcaption>Спокойный серый и приглушенный коричневый</figcaption>
             <p class="description">
               Такой дизайн-проект, как спальня в стиле лофт безусловно имеет
@@ -95,22 +104,6 @@
               несут никакой функциональной нагрузки, как требует того минимализм
               или хай-тек. Лофт остался между дворцовой классикой и оснащенной
               “до зубов” техникой современностью.
-            </p>
-          </figure>
-          <figure>
-            <h4>Ванная комната в серых тонах</h4>
-            <img
-              src="images/exampl/seraya-vannaya_5d949ebe63d60.jpg"
-              alt="На фото изображена ванна в серых тонах с узорной плиткой вокруг умывальника и зеркала с подсветкой над умывальником"
-            />
-            <figcaption>
-              Основной цвет серый, акцент на узорную плитку
-            </figcaption>
-            <p class="description">
-              Серый интерьер ванной комнаты будто предназначен для стилистики
-              хай-тек, поскольку здесь отлично будет смотреться керамическая
-              плитка бело-серого оттенка в сочетании с пепельным сантехническим
-              оборудованием чётких форм.
             </p>
           </figure>
           <figure>
@@ -192,23 +185,6 @@
             </p>
           </figure>
           <figure>
-            <h4>Спальня в стиле лофт</h4>
-            <img
-              src="images/exampl/dizajn-spalni-v-stile-loft-27.jpg"
-              alt="Спальня в сером цвете, с потолка свисают светильники над тумбочками у кровати"
-            />
-            <figcaption>Спокойный серый и приглушенный коричневый</figcaption>
-            <p class="description">
-              Такой дизайн-проект, как спальня в стиле лофт безусловно имеет
-              отношения к современному направлению дизайна, но в то же время
-              декор для него выбирается винтажный, мебель может быть
-              антикварной, а некоторые арт-объекты используемые для украшения не
-              несут никакой функциональной нагрузки, как требует того минимализм
-              или хай-тек. Лофт остался между дворцовой классикой и оснащенной
-              “до зубов” техникой современностью.
-            </p>
-          </figure>
-          <figure>
             <h4>Ванная комната в серых тонах</h4>
             <img
               src="images/exampl/seraya-vannaya_5d949ebe63d60.jpg"
@@ -245,13 +221,7 @@
       </div>
     </section>
 
-    <a
-      href="#"
-      class="scroll-top-btn "
-      id="scroll-top-button"
-      onclick="document.fireEvent('scrollToTopClick');"
-      style="visibility: visible; zoom: 1;"
-    >
+    <a href="#" class="scroll-top-btn ">
       <img src="images/scroll.svg" class="scroll-top-btn-icon" alt="▲" />
     </a>
 
