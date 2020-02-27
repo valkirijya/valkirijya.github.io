@@ -37,16 +37,7 @@
 }
 .section {
   margin-top: 6%;
-  margin-bottom: 1.5%;
-}
-
-.footer {
-  margin-top: 0.5vw;
-  text-align: center;
-  background-color: rgb(48, 47, 47);
-  color: rgb(189, 187, 187);
-  box-shadow: 3px 1px 15px 5px #494848;
-  border-top: 1px solid rgb(138, 143, 143);
+  margin-bottom: 2.5%;
 }
 
 .header,
@@ -77,7 +68,6 @@ h1,
 h3,
 .hed,
 rect,
-footer,
 .navigation {
   display: flex;
   justify-content: center;
@@ -120,7 +110,7 @@ svg {
   position: absolute;
   margin-left: -50%;
   padding: 0;
-  box-shadow: 6px 6px 13px 5px #60616169;
+  box-shadow: 6px 6px 13px 0px #60616169;
 }
 
 rect {
@@ -131,10 +121,6 @@ rect {
 
 rect.second {
   fill: rgba(185, 187, 187, 0.281);
-}
-
-.footer > p {
-  margin: 1% 0 0 0;
 }
 
 .hed {
@@ -185,13 +171,13 @@ ul.submenu {
 
 .scroll-top-btn {
   position: fixed;
-  right: 10px;
-  bottom: 10px;
+  right: 5px;
+  bottom: 12px;
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  box-shadow: 0px 3px 7px 5px rgba(116, 114, 114, 0.746);
-  background-color: rgba(189, 189, 189, 0.541);
+  box-shadow: 3px 3px 8px 2px rgba(116, 114, 114, 0.746);
+  background-color: rgba(219, 218, 218, 0.541);
   z-index: 5;
   visibility: hidden;
   transition: ease-out;
@@ -208,16 +194,51 @@ ul.submenu {
 }
 
 .favicon {
-  position: absolute;
-  left: 250px;
-  width: 136px;
+  position: relative;
+  float: left; 
+  padding: auto;
+  left: 28vw;
+  top: 0.8vw;
+  width: 8.5vw;
   background-color: rgba(255, 255, 255, 0.527);
+  box-shadow: 5px 5px 15px 0px rgb(84, 87, 87);
 }
 
-.footer > img {
-  height: 50px;
-  opacity: 0.7;
+.footer {
+  display: flex;
+  height: 60px;
+  margin-top: 0.5vw;
+  padding: 0.5vw 4vw 0.5vw 1vw;
+  background-color: rgb(48, 47, 47);
+  color: rgb(189, 187, 187);
+  box-shadow: 3px 1px 15px 5px #494848;
+  border-top: 1px solid rgb(138, 143, 143);
 }
+
+.footer > a {
+  margin: auto 0;
+}
+
+.footer > a > img {
+  height: 40px;
+  margin: auto 6px;
+}
+.footer > img.im-float {
+  height: 4vw;
+  margin: auto 0;
+}
+
+.footer > p {
+  margin: auto;
+  text-align: center;
+}
+
+.footer > address {
+  margin: auto 3vw auto 5px;
+  font-style: normal;
+}
+
+@media (max-widht: )
 
 @media (max-width: 800px) {
   .top_menu {
@@ -245,4 +266,18 @@ ul.submenu {
   p {
     font-size: 0.8em;
   }
+  .footer {
+    font-size: 0.8em;
+    height: 80px;
+  }
+  .footer > a {
+    
+  }
+
+.footer > a > img {
+  height: 30px;
+  margin: auto 3px;
+  float: left;
+}
+
 }
