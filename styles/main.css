@@ -18,14 +18,14 @@
   width: 100%;
   padding: 5px;
   position: fixed;
-  top: 5px;
+  top: 7px;
   letter-spacing: 0.5em;
   font-weight: 550;
   z-index: 500;
 }
 .header {
   position: relative;
-  top: 4.5vw;
+  top: 4.3vw;
   justify-content: center;
 }
 .title {
@@ -82,9 +82,8 @@ h3 {
 }
 
 h4 {
-  font-size: 1.6em;
-  margin: 10px;
-  padding: 0 10px 0 10px;
+  font-size: 1.7em;
+  margin: 0 0 15px 0;
   background-color: rgba(255, 255, 255, 0.507);
 }
 
@@ -130,7 +129,6 @@ rect.second {
   padding: 7px;
   font-size: 1.7em;
   font-weight: bold;
-  text-shadow: 2px 2px 4px #e9f0f3;
 }
 
 .active_page {
@@ -208,7 +206,7 @@ ul.submenu {
 
 .footer {
   display: flex;
-  height: 60px;
+  height: 65px;
   margin-top: 0.5vw;
   padding: 0.5vw 4vw 0 1vw;
   background-color: rgb(48, 47, 47);
@@ -226,7 +224,8 @@ ul.submenu {
   height: 40px;
   margin: auto 6px;
 }
-.footer > a > img:hover {
+.footer > div > a > img:hover {
+  background-color: rgba(131, 128, 128, 0.746);
   border-radius: 50%;
   box-shadow: 3px 3px 8px 2px rgba(167, 163, 163, 0.746);
 }
@@ -281,13 +280,19 @@ ul.submenu {
     height: 25px;
   }
   h1 {
-    margin-top: 19px;
+    margin-top: 23px;
+  }
+  .top_menu > li {
+    width: 130px;
+  }
+  ul.submenu {
+    width: 130px;
   }
 }
 
 @media (max-width: 600px) {
   .top_menu {
-    font-size: 0.7em;
+    font-size: 0.9em;
   }
   .top_menu > li {
     width: 110px;
@@ -296,7 +301,7 @@ ul.submenu {
     width: 110px;
   }
   h1 {
-    margin-top: 15px;
+    margin-top: 23px;
     font-size: 3em;
   }
   h3 {
@@ -329,7 +334,7 @@ ul.submenu {
 
 @media (max-width: 500px) {
   h1 {
-    margin-top: 20px;
+    margin-top: 31px;
   }
   .footer > p {
     margin: auto;
@@ -341,14 +346,6 @@ ul.submenu {
     display: flex;
     width: 100px;
   }
-  .scroll-top-btn {
-    width: 30px;
-    height: 30px;
-  }
-  .scroll-top-btn-icon {
-    width: 20px;
-    height: 20px;
-  }
   .footer > img.im-float {
     height: 9vw;
     margin: 10px 0;
@@ -357,7 +354,7 @@ ul.submenu {
 
 @media (max-width: 380px) {
   h1 {
-    margin-top: 25px;
+    margin-top: 35px;
   }
   .hed {
     padding: 2px;

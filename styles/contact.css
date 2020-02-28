@@ -1,6 +1,6 @@
 form {
   font-size: 1.3em;
-  height: 32vw;
+  height: 400px;
   width: 50vw;
   text-align: center;
   margin: 7% auto 50px auto;
@@ -32,6 +32,7 @@ form {
   height: 10vw;
   width: 40vw;
   text-align: left;
+  margin: 10px 0;
 }
 
 #submit {
@@ -49,4 +50,39 @@ form {
   background-color: #fc6363;
   box-shadow: 0px 0px 10px 6px #f8fcfc;
   color: #fff;
+}
+
+@media (max-width: 920px) {
+  form {
+    font-size: 1.2em;
+    width: 360px;
+  }
+  #submit {
+    height: 40px;
+    width: 130px;
+  }
+  #text {
+    width: 270px;
+    height: 90px;
+    text-align: left;
+  }
+  #name,
+  #email {
+    height: 35px;
+    width: 270px;
+  }
+}
+
+@media (max-width: 450px) {
+  form {
+    font-size: 1.1em;
+    margin: 40px auto 50px auto;
+    padding: 10px;
+    width: 300px;
+    height: 350px;
+  }
+  #name,
+  #email {
+    margin: 8px 0;
+  }
 }

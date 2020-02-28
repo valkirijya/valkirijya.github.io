@@ -1,5 +1,5 @@
 figure {
-  padding: 20px;
+  padding: 30px;
   margin: 30px 15px;
   background-color: rgba(133, 138, 138, 0.281);
   height: auto;
@@ -9,15 +9,15 @@ figure {
 }
 
 figure img {
-  width: 39vw;
+  width: 40vw;
   border: 6px solid rgba(255, 255, 255, 0.781);
 }
 
 .description {
-  font-weight: 600;
-  font-size: 1.3em;
+  font-size: 1.5em;
   text-align: justify;
-  padding: 10px;
+  padding: 15px 0 0 0;
+  margin: 0;
 }
 
 figcaption {
@@ -40,25 +40,33 @@ figcaption {
   figure img {
     width: 34vw;
   }
+  .description {
+    font-size: 1.4em;
+  }
 }
 
 @media (max-width: 835px) {
   h4 {
-    font-size: 1.2em;
+    font-size: 1.4em;
+  }
+  figure {
+    padding: 17px;
   }
   figcaption {
-    font-size: 0.9em;
+    font-size: 1em;
+    padding: 0 5px;
   }
   .description {
-    font-size: 1em;
+    font-size: 1.3em;
     padding: 5px;
-  }
-  p.description {
     margin: 5px 0;
   }
 }
 
 @media (max-width: 660px) {
+  h4 {
+    font-size: 1.2em;
+  }
   .column {
     flex: 90%;
     max-width: 95%;
@@ -66,10 +74,11 @@ figcaption {
   figure img {
     width: 75vw;
   }
-   figure {
+  figure {
     margin: 10px;
   }
- }
+  
+}
 
 @media (max-width: 430px) {
   .column {
@@ -79,4 +88,4 @@ figcaption {
   figure img {
     width: 70vw;
   }
- }
+}
