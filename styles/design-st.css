@@ -1,4 +1,8 @@
 figure {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  max-width: 595px;
   padding: 30px;
   margin: 30px 15px;
   background-color: rgba(133, 138, 138, 0.281);
@@ -9,7 +13,7 @@ figure {
 }
 
 figure img {
-  width: 40vw;
+  width: 100%;
   border: 6px solid rgba(255, 255, 255, 0.781);
 }
 
@@ -37,9 +41,6 @@ figcaption {
 }
 
 @media (max-width: 1086px) {
-  figure img {
-    width: 34vw;
-  }
   .description {
     font-size: 1.4em;
   }
@@ -71,21 +72,14 @@ figcaption {
     flex: 90%;
     max-width: 95%;
   }
-  figure img {
-    width: 75vw;
-  }
   figure {
     margin: 10px;
   }
-  
 }
 
 @media (max-width: 430px) {
   .column {
     flex: 90%;
     max-width: 95%;
-  }
-  figure img {
-    width: 70vw;
   }
 }

@@ -7,7 +7,7 @@
   color: rgb(3, 15, 15);
   margin: 0;
   padding: 0;
-  background-image: url("../images/bg.webp");
+  background-image: url("../images/bground.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -20,7 +20,6 @@
   position: fixed;
   top: 7px;
   letter-spacing: 0.5em;
-  font-weight: 550;
   z-index: 500;
 }
 .header {
@@ -91,13 +90,11 @@ nav ul {
   list-style: none;
   letter-spacing: 0.1em;
   padding: 0;
-  margin: 0;
 }
 
 nav a {
   color: #fff;
   text-decoration: none;
-  margin: 0 10px;
 }
 
 nav a:hover {
@@ -137,13 +134,11 @@ rect.second {
 
 .top_menu {
   display: flex;
-  justify-content: space-around;
   margin: auto;
 }
 
 .top_menu > li {
   display: inline-block;
-  position: relative;
   width: 175px;
 }
 
@@ -157,8 +152,7 @@ rect.second {
 }
 
 ul.submenu {
-  width: 180px;
-  text-align: center;
+  width: 175px;
   background-color: #ff7c7cce;
 }
 
@@ -175,9 +169,9 @@ ul.submenu {
   border-radius: 50%;
   box-shadow: 3px 3px 8px 2px rgba(116, 114, 114, 0.746);
   background-color: rgba(219, 218, 218, 0.541);
-  z-index: 5;
   transition-duration: 2s;
   transition: ease-in-out;
+  z-index: 5;
 }
 
 .hidden {
