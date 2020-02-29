@@ -1,0 +1,55 @@
+/*.rib  {
+    margin: 0 auto; 
+    max-width: 660px;
+    padding: 0 20px;
+  }*/
+.ribbon {
+  position: relative;
+}
+.ribbon3 {
+  width: 110px;
+  height: 110px;
+  line-height: 50px;
+  position: absolute;
+  left: -9px;
+  top: 9px;
+  background: ;
+  box-shadow: 8px 8px 10px 4px #636b6b;
+  border-top: 1px solid rgb(179, 178, 178);
+  border-right: 1px solid rgb(179, 178, 178);
+}
+.ribbon3:before,
+.ribbon3:after {
+  content: "";
+  position: absolute;
+}
+.ribbon3:before {
+  height: 0;
+  width: 0;
+  top: -10px;
+  left: 0.1px;
+  border-bottom: 9px solid rgb(65, 64, 64);
+  border-left: 9px solid transparent;
+}
+.ribbon3:after {
+  height: 0;
+  width: 0;
+  right: -17px;
+  border-bottom: 18px solid transparent;
+  border-left: 16px solid rgb(65, 64, 64);
+  top: 91px;
+}
+.favicon {
+  width: 100%;
+  background: rgb(117, 110, 110);
+}
+/*
+@media (min-width: 500px) {
+  .ribbons-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  /*.ribbon {
+      width: 48%;
+    }*/

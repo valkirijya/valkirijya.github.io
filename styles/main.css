@@ -9,7 +9,7 @@
   padding: 0;
   background-image: url("../images/bground.webp");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
   background-attachment: fixed;
   letter-spacing: 0.1em;
 }
@@ -24,6 +24,7 @@
 }
 .header {
   position: relative;
+  padding: 15px 0 0 0;
   top: 4.3vw;
   justify-content: center;
 }
@@ -49,10 +50,13 @@
 }
 
 h1 {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
+  width: 685px;
   font-size: 5em;
   text-shadow: 12px 12px 9px rgb(52, 56, 56);
+  background-color: rgb(117, 110, 110);
+  box-shadow: 8px 8px 10px 4px #636b6b;
 }
 
 h1 > a {
@@ -61,7 +65,7 @@ h1 > a {
 }
 
 h1 > a:hover {
-  color: rgb(71, 69, 69);
+  color: #f88888;
 }
 
 h1,
@@ -76,7 +80,7 @@ rect,
 h3 {
   font-size: 1.4em;
   letter-spacing: 0.2em;
-  margin: 0 0 5px 0;
+  margin: 10px 0 5px 0;
   padding-bottom: 7px;
 }
 
@@ -187,17 +191,6 @@ ul.submenu {
   left: 5px;
 }
 
-.favicon {
-  position: relative;
-  float: left;
-  padding: auto;
-  left: 28vw;
-  top: 0.8vw;
-  width: 8.5vw;
-  background-color: rgba(255, 255, 255, 0.527);
-  box-shadow: 5px 5px 15px 0px rgb(84, 87, 87);
-}
-
 .footer {
   display: flex;
   flex-wrap: wrap;
@@ -210,7 +203,7 @@ ul.submenu {
   border-top: 1px solid rgb(138, 143, 143);
 }
 
-.footer div{
+.footer div {
   margin: auto 5px;
 }
 
@@ -377,11 +370,11 @@ ul.submenu {
     justify-content: center;
   }
 }
-@media (max-width: 371px){
+@media (max-width: 371px) {
   .footer div {
     margin: 5px auto;
   }
   .footer {
-        height: 120px;
+    height: 120px;
   }
 }

@@ -11,12 +11,12 @@ function check() {
     document.documentElement.clientHeight
   );
   console.log(scrollHeight + " - scrollHeight");
-  if (document.documentElement.clientHeight / 3 < window.pageYOffset) {
+  if (
+    document.documentElement.clientHeight / 3 < window.pageYOffset &&
+    scrollHeight - 300 > window.pageYOffset
+  ) {
     btn.setAttribute("style", "visibility: visible;");
   } else {
     btn.setAttribute("style", "visibility: hidden;");
   }
-  if (scrollHeight - 300 < window.pageYOffset) {
-    btn.setAttribute("style", "visibility: hidden;");
-  }
-}
+};

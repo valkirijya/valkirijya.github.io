@@ -10,7 +10,7 @@ form {
   color: rgb(3, 15, 15);
   font-family: "Amatic SC", cursive;
   font-weight: bold;
-  background-image: url("../images/");
+  background-image: url("../images/triangular.png");
   background-size: cover;
   position: relative;
 }
