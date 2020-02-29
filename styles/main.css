@@ -200,6 +200,7 @@ ul.submenu {
 
 .footer {
   display: flex;
+  flex-wrap: wrap;
   height: 65px;
   margin-top: 0.5vw;
   padding: 0.5vw 4vw 0 1vw;
@@ -207,6 +208,10 @@ ul.submenu {
   color: rgb(189, 187, 187);
   box-shadow: 3px 1px 15px 5px #494848;
   border-top: 1px solid rgb(138, 143, 143);
+}
+
+.footer div{
+  margin: auto 5px;
 }
 
 .footer div a {
@@ -217,26 +222,28 @@ ul.submenu {
 .footer a > img {
   height: 40px;
   margin: auto 6px;
+  transition: 0.5s ease-in-out;
 }
 .footer > div > a > img:hover {
-  background-color: rgba(131, 128, 128, 0.746);
-  border-radius: 50%;
-  box-shadow: 3px 3px 8px 2px rgba(167, 163, 163, 0.746);
+  transform: scale(1.2);
+  transition: 0.2s ease-in-out;
 }
 
 .footer > img.im-float {
   height: 4vw;
   margin: auto 0;
+  transition: 0.2s ease-in-out;
 }
 
 .im-float:hover {
-  transform: scaleY(1.2);
-  transition: ease-in-out;
+  transform: scale(1.2);
+  transition: 0.5s ease-in-out;
 }
 
 .footer > p {
   margin: auto;
   text-align: center;
+  padding: 10px;
 }
 
 .footer > address {
@@ -282,9 +289,12 @@ ul.submenu {
   ul.submenu {
     width: 130px;
   }
+  .footer > img.im-float {
+    height: 40px;
+  }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 641px) {
   .top_menu {
     font-size: 0.9em;
   }
@@ -322,22 +332,21 @@ ul.submenu {
   .footer div {
     width: 100px;
     height: 80px;
-    margin: auto;
+    margin: auto 5px;
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 508px) {
   h1 {
     margin-top: 31px;
   }
   .footer > p {
-    margin: auto;
-    display: flex;
+    margin: 5px auto;
+    float: left;
     min-width: 130px;
   }
   .footer > address {
-    margin: 10px;
-    display: flex;
+    margin: 10px 0;
     width: 100px;
   }
   .footer > img.im-float {
@@ -346,17 +355,13 @@ ul.submenu {
   }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 418px) {
   h1 {
     margin-top: 35px;
   }
   .hed {
     padding: 2px;
     font-size: 1.1em;
-  }
-  .footer {
-    height: 150px;
-    justify-content: center;
   }
   .footer > p {
     height: 50px;
@@ -365,7 +370,18 @@ ul.submenu {
     width: 150px;
     height: 40px;
   }
+  .footer > address {
+    width: 170px;
+  }
   .footer {
-    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media (max-width: 371px){
+  .footer div {
+    margin: 5px auto;
+  }
+  .footer {
+        height: 120px;
   }
 }

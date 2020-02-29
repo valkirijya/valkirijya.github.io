@@ -1,9 +1,22 @@
 let btn = document.querySelector(".scroll-top-btn");
-console.log(btn);
 
-window.addEventListener('scroll', check);
+window.addEventListener("scroll", check);
 function check() {
-if ((document.documentElement.clientHeight)/3 < window.pageYOffset) {
-    btn.setAttribute('style', "visibility: visible;");
-} else { btn.setAttribute('style', "visibility: hidden;");}
-};
+  let scrollHeight = Math.max(
+    document.body.scrollHeight,
+    document.documentElement.scrollHeight,
+    document.body.offsetHeight,
+    document.documentElement.offsetHeight,
+    document.body.clientHeight,
+    document.documentElement.clientHeight
+  );
+  console.log(scrollHeight + " - scrollHeight");
+  if (document.documentElement.clientHeight / 3 < window.pageYOffset) {
+    btn.setAttribute("style", "visibility: visible;");
+  } else {
+    btn.setAttribute("style", "visibility: hidden;");
+  }
+  if (scrollHeight - 300 < window.pageYOffset) {
+    btn.setAttribute("style", "visibility: hidden;");
+  }
+}
