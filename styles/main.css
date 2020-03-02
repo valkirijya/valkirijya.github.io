@@ -9,17 +9,22 @@
   font-weight: bold;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box;
 }
 .container {
+  scroll-behavior: smooth;
   font-family: "Amatic SC", cursive;
   color: rgb(3, 15, 15);
   margin: 0;
   padding: 0;
-  background-image: url("../images/bground.webp");
+  background-image: url("../images/bg.webp");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   background-attachment: fixed;
   letter-spacing: 0.1em;
 }
@@ -166,7 +171,7 @@ rect.second {
 
 .submenu {
   position: absolute;
-  transform: scaleY(0);
+ transform: scaleY(0);
   transform-origin: 0 0;
   transition: 0.3s linear;
   line-height: 1.6em;
@@ -182,6 +187,14 @@ ul.submenu {
   transform: scaleY(1);
 }
 
+.hidden {
+  visibility: hidden;
+}
+
+.scroll {
+  transition: 2s ease-in-out;
+}
+
 .scroll-top-btn {
   position: fixed;
   right: 5px;
@@ -191,14 +204,11 @@ ul.submenu {
   border-radius: 50%;
   box-shadow: 3px 3px 8px 2px rgba(116, 114, 114, 0.746);
   background-color: rgba(219, 218, 218, 0.541);
-  transition-duration: 2s;
-  transition: ease-in-out;
+  text-decoration: none;
   z-index: 5;
 }
 
-.hidden {
-  visibility: hidden;
-}
+
 
 .scroll-top-btn-icon {
   width: 30px;
