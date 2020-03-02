@@ -1,7 +1,17 @@
+@font-face {
+  font-family: "Amatic SC";
+  src: local("Amatic SC"), url("../fonts/AmaticSC-Regular.ttf");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Amatic SC";
+  src: local("Amatic SC"), url("../fonts/AmaticSC-Bold.ttf");
+  font-weight: bold;
+}
+
 * {
   box-sizing: border-box;
 }
-
 .container {
   font-family: "Amatic SC", cursive;
   color: rgb(3, 15, 15);
@@ -25,20 +35,19 @@
 .header {
   position: relative;
   padding: 15px 0 0 0;
-  top: 4.3vw;
+  top: 1vw;
   justify-content: center;
 }
 .title {
   position: relative;
-  top: 4.1vw;
+  top: 0.7vw;
   margin: 0;
   letter-spacing: 0.1em;
   text-align: center;
   background-color: rgba(133, 138, 138, 0.281);
 }
 .section {
-  margin-top: 6%;
-  margin-bottom: 2.5%;
+  margin: 2.5% 1%;
 }
 
 .header,
@@ -51,9 +60,9 @@
 
 h1 {
   margin: 0 auto;
-  padding: 0;
-  width: 685px;
+  width: 65vw;
   font-size: 5em;
+  font-weight: bold;
   text-shadow: 12px 12px 9px rgb(52, 56, 56);
   background-color: rgb(117, 110, 110);
   box-shadow: 8px 8px 10px 4px #636b6b;
@@ -72,13 +81,15 @@ h1,
 h3,
 .hed,
 rect,
-.navigation {
+.navigation,
+.cover {
   display: flex;
   justify-content: center;
 }
 
 h3 {
   font-size: 1.4em;
+  font-weight: bold;
   letter-spacing: 0.2em;
   margin: 10px 0 5px 0;
   padding-bottom: 7px;
@@ -86,6 +97,7 @@ h3 {
 
 h4 {
   font-size: 1.7em;
+  font-weight: bold;
   margin: 0 0 15px 0;
   background-color: rgba(255, 255, 255, 0.507);
 }
@@ -123,6 +135,12 @@ rect {
 
 rect.second {
   fill: rgba(185, 187, 187, 0.281);
+}
+
+.cover {
+  position: relative;
+  top: 7px;
+  height: 46px;
 }
 
 .hed {
@@ -249,7 +267,6 @@ ul.submenu {
     font-size: 1.6em;
   }
   h1 {
-    margin-top: 12px;
     font-size: 4em;
   }
   h3 {
@@ -274,7 +291,11 @@ ul.submenu {
     height: 25px;
   }
   h1 {
-    margin-top: 23px;
+    font-size: 3.5em;
+    width: 70vw;
+  }
+  .title {
+    top: 0.4vw;
   }
   .top_menu > li {
     width: 130px;
@@ -298,14 +319,11 @@ ul.submenu {
     width: 110px;
   }
   h1 {
-    margin-top: 23px;
+    width: 75vw;
     font-size: 3em;
   }
   h3 {
-    font-size: 1em;
-    letter-spacing: 0.2em;
-    margin: 0 0 5px 0;
-    padding-bottom: 7px;
+    font-size: 1.1em;
   }
   h2 {
     font-size: 1em;
@@ -331,7 +349,11 @@ ul.submenu {
 
 @media (max-width: 508px) {
   h1 {
-    margin-top: 31px;
+    width: 80vw;
+    font-size: 2.5em;
+  }
+  h3 {
+    font-size: 1em;
   }
   .footer > p {
     margin: 5px auto;
@@ -350,7 +372,13 @@ ul.submenu {
 
 @media (max-width: 418px) {
   h1 {
-    margin-top: 35px;
+    width: 93vw;
+  }
+  h3 {
+    font-size: 0.9em;
+  }
+  .title {
+    top: 0;
   }
   .hed {
     padding: 2px;

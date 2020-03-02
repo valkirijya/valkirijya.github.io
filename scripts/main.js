@@ -12,8 +12,8 @@ function check() {
   );
   console.log(scrollHeight + " - scrollHeight");
   if (
-    document.documentElement.clientHeight / 3 < window.pageYOffset &&
-    scrollHeight - 300 > window.pageYOffset
+    ((document.documentElement.clientHeight / 3) < window.pageYOffset) &&
+    ((scrollHeight - 340) > window.pageYOffset)
   ) {
     btn.setAttribute("style", "visibility: visible;");
   } else {

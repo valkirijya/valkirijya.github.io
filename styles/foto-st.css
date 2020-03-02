@@ -1,50 +1,48 @@
+.section {
+  display: flex;
+  justify-content: center;
+}
 .row {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 3px;
-  justify-content: center;
-}
-
-.column {
-  flex: 25%;
-  max-width: 25%;
-  padding: 0 3px;
-}
-
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
-  width: 100%;
+  max-width: 80%;
+  margin: 10px;
+  padding: 4px 0;
+  justify-content: space-evenly;
   border: 3px solid black;
-  padding: 5px;
+}
+
+.row img {
+  width: 25vw;
+  border: 3px solid black;
+  padding: 4px;
+  margin: 4px;
 }
 
 .scale {
+  transition: 1s easy-in-out;
+}
+
+.scale:hover {
+  transform: scale(1.9);
+  background-color: rgba(0, 0, 0, 0.521);
   transition: 1s;
 }
 
- .scale:hover {
-  transform: scale(2.05);
-  background-color: rgba(0, 0, 0, 0.521);
- }
- 
- 
-@media (max-width: 800px) {
-  .column {
-    flex: 45%;
-    max-width: 45%;
+@media (max-width: 881px) {
+  .row img {
+    width: 37vw;
   }
   .scale:hover {
-    transform: scale(1.25);
+    transform: scale(1.65);
   }
 }
 
-@media (max-width: 600px) {
-  .column {
-    flex: 86%;
-    max-width: 86%;
+@media (max-width: 499px) {
+  .row img {
+    width: 75vw;
   }
   .scale:hover {
-    transform: scale(1.18);
+    transform: scale(1.32);
   }
 }
