@@ -1,3 +1,8 @@
-.section {
+.fild {
+    width: 1000px;
+    height: 500px;
+    border: 3px solid black;
     margin: 3% auto;
-} 
+    background-image: url("../images/geometric.png");
+    background-size: cover;
+}

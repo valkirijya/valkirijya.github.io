@@ -64,18 +64,19 @@ html {
 }
 
 h1 {
-  margin: 0 auto;
-  width: 65vw;
+  margin: 5px auto 0 auto;
+  width: calc(50% + 130px);
   font-size: 5em;
   font-weight: bold;
-  text-shadow: 12px 12px 9px rgb(52, 56, 56);
+  text-shadow: 10px -5px 6px rgb(52, 56, 56);
   background-color: rgb(117, 110, 110);
-  box-shadow: 8px 8px 10px 4px #636b6b;
+  filter: drop-shadow(7px -2px 9px black);
 }
 
 h1 > a {
   text-decoration: none;
   color: #fff;
+  padding: 0 10px;
 }
 
 h1 > a:hover {
@@ -171,7 +172,7 @@ rect.second {
 
 .submenu {
   position: absolute;
- transform: scaleY(0);
+  transform: scaleY(0);
   transform-origin: 0 0;
   transition: 0.3s linear;
   line-height: 1.6em;
@@ -187,12 +188,44 @@ ul.submenu {
   transform: scaleY(1);
 }
 
+.rib {
+  position: relative;
+}
+.ribbon {
+  display: flex;
+  width: calc(10% + 22px);
+  height: calc(96% + 4px);
+  position: absolute;
+  left: -9px;
+  top: 9px;
+  filter: drop-shadow(7px -2px 9px black);
+}
+.ribbon:before {
+  content: "";
+  position: absolute;
+}
+.ribbon:before {
+  height: 0;
+  width: 0;
+  top: -9px;
+  left: 0.1px;
+  border-bottom: 9px solid rgb(65, 64, 64);
+  border-left: 9px solid transparent;
+}
+
+.favicon {
+  width: 100%;
+  background: rgb(117, 110, 110);
+  filter: saturate(85%);
+}
+
 .hidden {
   visibility: hidden;
 }
 
 .scroll {
   transition: 2s ease-in-out;
+  border-radius: 50%;
 }
 
 .scroll-top-btn {
@@ -207,8 +240,6 @@ ul.submenu {
   text-decoration: none;
   z-index: 5;
 }
-
-
 
 .scroll-top-btn-icon {
   width: 30px;
@@ -264,7 +295,6 @@ ul.submenu {
 .footer > p {
   margin: auto;
   text-align: center;
-  padding: 10px;
 }
 
 .footer > address {
@@ -302,7 +332,6 @@ ul.submenu {
   }
   h1 {
     font-size: 3.5em;
-    width: 70vw;
   }
   .title {
     top: 0.4vw;
@@ -322,14 +351,11 @@ ul.submenu {
   .top_menu {
     font-size: 0.9em;
   }
-  .top_menu > li {
-    width: 110px;
-  }
+  .top_menu > li,
   ul.submenu {
     width: 110px;
   }
   h1 {
-    width: 75vw;
     font-size: 3em;
   }
   h3 {
@@ -359,7 +385,6 @@ ul.submenu {
 
 @media (max-width: 508px) {
   h1 {
-    width: 80vw;
     font-size: 2.5em;
   }
   h3 {
@@ -382,7 +407,7 @@ ul.submenu {
 
 @media (max-width: 418px) {
   h1 {
-    width: 93vw;
+    justify-content: flex-end;
   }
   h3 {
     font-size: 0.9em;
@@ -390,29 +415,36 @@ ul.submenu {
   .title {
     top: 0;
   }
+  .top_menu > li,
+  ul.submenu {
+    width: 90px;
+  }
   .hed {
     padding: 2px;
     font-size: 1.1em;
   }
   .footer > p {
+    width: 200px;
     height: 50px;
+    margin: 5px auto;
   }
   .footer div {
-    width: 150px;
+    width: 250px;
     height: 40px;
+    margin: 5px auto;
+    display: flex;
+    justify-content: center;
   }
   .footer > address {
     width: 170px;
+    height: 50px;
+    margin: 10px auto 0 0;
   }
   .footer {
     justify-content: center;
+    height: 170px;
   }
-}
-@media (max-width: 371px) {
-  .footer div {
-    margin: 5px auto;
-  }
-  .footer {
-    height: 120px;
+  .footer > img.im-float {
+    margin: 10px 0 10px auto;
   }
 }
