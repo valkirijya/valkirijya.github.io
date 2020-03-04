@@ -6,3 +6,9 @@
     background-image: url("../images/geometric.png");
     background-size: cover;
 }
+figure {
+    width: auto;
+    height: calc(50% + 200px);
+    border: 2px solid white;
+    margin: auto;
+}

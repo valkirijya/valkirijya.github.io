@@ -8,26 +8,24 @@
   src: local("Amatic SC"), url("../fonts/AmaticSC-Bold.ttf");
   font-weight: bold;
 }
-
 html {
   scroll-behavior: smooth;
 }
-
 * {
   box-sizing: border-box;
 }
-.container {
-  scroll-behavior: smooth;
+body {
   font-family: "Amatic SC", cursive;
   color: rgb(3, 15, 15);
   margin: 0;
   padding: 0;
-  background-image: url("../images/bg.webp");
+  background-image: url("../images/heading.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   letter-spacing: 0.1em;
 }
+/*////////////////////////////Навигация///////////////////////*/
 .navigation {
   font-size: 1.8em;
   width: 100%;
@@ -37,24 +35,52 @@ html {
   letter-spacing: 0.5em;
   z-index: 500;
 }
+nav ul {
+  list-style: none;
+  letter-spacing: 0.1em;
+  padding: 0;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+nav a:hover {
+  color: rgb(3, 15, 15);
+  text-shadow: 5px -1px 5px black;
+}
+.active_page {
+  color: rgb(3, 15, 15);
+}
+.top_menu {
+  display: flex;
+  margin: auto;
+}
+.top_menu > li {
+  display: inline-block;
+  width: 175px;
+}
+.submenu {
+  position: absolute;
+  transform: scaleY(0);
+  transform-origin: 0 0;
+  transition: 0.3s linear;
+  line-height: 1.6em;
+  border-radius: 3%;
+}
+ul.submenu {
+  width: 175px;
+  background-color: #ff7c7cce;
+}
+.top_menu > li:hover .submenu {
+  transform: scaleY(1);
+}
+/*/////////////////////////Оглавление///////////////////////*/
 .header {
   position: relative;
   padding: 15px 0 0 0;
   top: 1vw;
   justify-content: center;
 }
-.title {
-  position: relative;
-  top: 0.7vw;
-  margin: 0;
-  letter-spacing: 0.1em;
-  text-align: center;
-  background-color: rgba(133, 138, 138, 0.281);
-}
-.section {
-  margin: 2.5% 1%;
-}
-
 .header,
 .navigation {
   color: #fff;
@@ -62,7 +88,6 @@ html {
   box-shadow: 2px 0px 15px 7px #e9f0f3;
   text-align: center;
 }
-
 h1 {
   margin: 5px auto 0 auto;
   width: calc(50% + 130px);
@@ -72,17 +97,14 @@ h1 {
   background-color: rgb(117, 110, 110);
   filter: drop-shadow(7px -2px 9px black);
 }
-
 h1 > a {
   text-decoration: none;
   color: #fff;
   padding: 0 10px;
 }
-
 h1 > a:hover {
   color: #f88888;
 }
-
 h1,
 h3,
 .hed,
@@ -92,102 +114,6 @@ rect,
   display: flex;
   justify-content: center;
 }
-
-h3 {
-  font-size: 1.4em;
-  font-weight: bold;
-  letter-spacing: 0.2em;
-  margin: 10px 0 5px 0;
-  padding-bottom: 7px;
-}
-
-h4 {
-  font-size: 1.7em;
-  font-weight: bold;
-  margin: 0 0 15px 0;
-  background-color: rgba(255, 255, 255, 0.507);
-}
-
-nav ul {
-  list-style: none;
-  letter-spacing: 0.1em;
-  padding: 0;
-}
-
-nav a {
-  color: #fff;
-  text-decoration: none;
-}
-
-nav a:hover {
-  color: rgb(3, 15, 15);
-  text-decoration: underline;
-}
-
-svg {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  margin-left: -50%;
-  padding: 0;
-  box-shadow: 6px 6px 13px 0px #60616169;
-}
-
-rect {
-  width: 100%;
-  height: 100%;
-  fill: rgba(255, 255, 255, 0.527);
-}
-
-rect.second {
-  fill: rgba(185, 187, 187, 0.281);
-}
-
-.cover {
-  position: relative;
-  top: 7px;
-  height: 46px;
-}
-
-.hed {
-  margin: 0;
-  padding: 7px;
-  font-size: 1.7em;
-  font-weight: bold;
-}
-
-.active_page {
-  color: rgb(3, 15, 15);
-}
-
-.top_menu {
-  display: flex;
-  margin: auto;
-}
-
-.top_menu > li {
-  display: inline-block;
-  width: 175px;
-}
-
-.submenu {
-  position: absolute;
-  transform: scaleY(0);
-  transform-origin: 0 0;
-  transition: 0.3s linear;
-  line-height: 1.6em;
-  border-radius: 3%;
-}
-
-ul.submenu {
-  width: 175px;
-  background-color: #ff7c7cce;
-}
-
-.top_menu > li:hover .submenu {
-  transform: scaleY(1);
-}
-
 .rib {
   position: relative;
 }
@@ -199,12 +125,11 @@ ul.submenu {
   left: -9px;
   top: 9px;
   filter: drop-shadow(7px -2px 9px black);
+  background: rgb(117, 110, 110);
 }
 .ribbon:before {
   content: "";
   position: absolute;
-}
-.ribbon:before {
   height: 0;
   width: 0;
   top: -9px;
@@ -212,22 +137,63 @@ ul.submenu {
   border-bottom: 9px solid rgb(65, 64, 64);
   border-left: 9px solid transparent;
 }
-
 .favicon {
   width: 100%;
-  background: rgb(117, 110, 110);
   filter: saturate(85%);
 }
-
-.hidden {
-  visibility: hidden;
+h3 {
+  font-size: 1.4em;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  margin: 10px 0 5px 0;
+  padding-bottom: 7px;
 }
-
+/*/////////////////////////Название главы/////////////////////*/
+.title {
+  position: relative;
+  top: 0.7vw;
+  margin: 0;
+  letter-spacing: 0.1em;
+  text-align: center;
+  background-color: rgba(133, 138, 138, 0.281);
+}
+.hed {
+  margin: 0;
+  padding: 7px;
+  font-size: 1.7em;
+  font-weight: bold;
+}
+svg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  margin-left: -50%;
+  padding: 0;
+  box-shadow: 6px -1px 13px 2px #60616169;
+}
+rect {
+  width: 100%;
+  height: 100%;
+  fill: rgba(255, 255, 255, 0.527);
+}
+rect.second {
+  fill: rgba(185, 187, 187, 0.281);
+}
+/*/////////////////////////Основная секция//////////////////*/
+.section {
+  margin: 2.5% 1%;
+}
+h4 {
+  font-size: 1.7em;
+  font-weight: bold;
+  margin: 0 0 15px 0;
+  background-color: rgba(255, 255, 255, 0.507);
+}
+/*///////////////////////Прокрутка////////////////////////////*/
 .scroll {
   transition: 2s ease-in-out;
   border-radius: 50%;
 }
-
 .scroll-top-btn {
   position: fixed;
   right: 5px;
@@ -240,7 +206,6 @@ ul.submenu {
   text-decoration: none;
   z-index: 5;
 }
-
 .scroll-top-btn-icon {
   width: 30px;
   height: 30px;
@@ -249,7 +214,7 @@ ul.submenu {
   top: 4px;
   left: 5px;
 }
-
+/*////////////////////////////Футер////////////////////////////*/
 .footer {
   display: flex;
   flex-wrap: wrap;
@@ -261,16 +226,13 @@ ul.submenu {
   box-shadow: 3px 1px 15px 5px #494848;
   border-top: 1px solid rgb(138, 143, 143);
 }
-
 .footer div {
   margin: auto 5px;
 }
-
 .footer div a {
   margin: 3px 0;
   float: left;
 }
-
 .footer a > img {
   height: 40px;
   margin: auto 6px;
@@ -280,28 +242,33 @@ ul.submenu {
   transform: scale(1.2);
   transition: 0.2s ease-in-out;
 }
-
 .footer > img.im-float {
   height: 4vw;
   margin: auto 0;
   transition: 0.2s ease-in-out;
 }
-
 .im-float:hover {
   transform: scale(1.2);
   transition: 0.5s ease-in-out;
 }
-
 .footer > p {
   margin: auto;
   text-align: center;
 }
-
 .footer > address {
   margin: auto 3vw auto 5px;
   font-style: normal;
 }
-
+/*////////////////////////Дополнительно////////////////////*/
+.cover {
+  position: relative;
+  top: 7px;
+  height: 46px;
+}
+.hidden {
+  visibility: hidden;
+}
+/*//////////////////////////Адаптивность////////////////////*/
 @media (max-width: 1100px) {
   .navigation {
     font-size: 1.6em;
@@ -320,7 +287,6 @@ ul.submenu {
     font-size: 1.5em;
   }
 }
-
 @media (max-width: 800px) {
   .scroll-top-btn {
     width: 35px;
@@ -346,7 +312,6 @@ ul.submenu {
     height: 40px;
   }
 }
-
 @media (max-width: 641px) {
   .top_menu {
     font-size: 0.9em;
@@ -382,7 +347,6 @@ ul.submenu {
     margin: auto 5px;
   }
 }
-
 @media (max-width: 508px) {
   h1 {
     font-size: 2.5em;
@@ -404,7 +368,6 @@ ul.submenu {
     margin: 10px 0;
   }
 }
-
 @media (max-width: 418px) {
   h1 {
     justify-content: flex-end;

@@ -9,25 +9,25 @@
   margin: 10px;
   padding: 4px 0;
   justify-content: space-evenly;
-  border: 3px solid black;
 }
 
 .row img {
   width: 25vw;
   border: 3px solid black;
-  padding: 4px;
+  padding: 10px 10px 60px 10px;
   margin: 4px;
+  background-color: rgb(248, 229, 203);
 }
 
 .scale {
-  transition: 1s easy-in-out;
+  transition: 0.7s easy-in-out;
+  position: relative;
+  z-index: 1;
 }
 
-.scale:hover {
-  transform: scale(1.9);
-  background-color: rgba(0, 0, 0, 0.521);
-  transition: 1s;
-}
+.row img:hover {
+  filter: drop-shadow(15px -15px 10px black);
+  }
 
 @media (max-width: 881px) {
   .row img {
