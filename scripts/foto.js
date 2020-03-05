@@ -6,31 +6,47 @@ fetch(url)
     console.log("Checkout this JSON! ", out);
     let outData = out;
     for (let i = 0; i < 24; i++) {
+      let div = document.createElement("div");
+      div.className = "foto";
       let element = document.createElement("img");
-      element.className = "scale";
+      element.className = "image";
+      let par = document.createElement("p");
+      par.className = "description";
+      par.innerText = `${outData[i].text}`;
       element.setAttribute("src", `${outData[i].photo}`);
       if (i % 2 == 0) {
-        element.setAttribute(
+        div.setAttribute(
           "style",
           `transform: rotate(${Math.round(Math.random() * 10)}deg);`
         );
       } else {
-        element.setAttribute(
+        div.setAttribute(
           "style",
           `transform: rotate(-${Math.round(Math.random() * 10)}deg);`
         );
       }
+      div.appendChild(element);
+      div.appendChild(par);
       let row = document.querySelector(".row");
-      row.appendChild(element);
+      row.appendChild(div);
     }
-    let img = document.querySelectorAll(".scale");
+    let img = document.querySelectorAll(".foto");
     for (let i = 0; i < img.length; i++) {
       img[i].addEventListener("mousedown", setOver);
       function setOver() {
         img[i].setAttribute(
           "style",
-          "transform: scale(1.9); z-index: 20; transition: 0.5s; "
+          `transform: scale(${scale}); z-index: 20; transition: 0.5s;`
         );
+        let scale;
+        let width = document.documentElement.clientWidth;
+        if (570 < width) {
+          scale = 1.8;
+        } else if (320 < width < 570) {
+          scale = 1.2;
+        } else {
+          scale = 1;
+        }
         img[i].addEventListener("mouseup", setOut);
         function setOut() {
           img[i].setAttribute(
