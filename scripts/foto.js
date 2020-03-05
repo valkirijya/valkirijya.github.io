@@ -1,4 +1,13 @@
 let url = "https://valkirijya.github.io/images/fo-galery/photo.json";
+let scale;
+let width = window.pageXOffset;
+if (570 < width) {
+  scale = 1.8;
+} else if (320 < width < 570) {
+  scale = 1.2;
+} else {
+  scale = 1;
+}
 
 fetch(url)
   .then(res => res.json())
@@ -38,15 +47,6 @@ fetch(url)
           "style",
           `transform: scale(${scale}); z-index: 20; transition: 0.5s;`
         );
-        let scale;
-        let width = document.documentElement.clientWidth;
-        if (570 < width) {
-          scale = 1.8;
-        } else if (320 < width < 570) {
-          scale = 1.2;
-        } else {
-          scale = 1;
-        }
         img[i].addEventListener("mouseup", setOut);
         function setOut() {
           img[i].setAttribute(
