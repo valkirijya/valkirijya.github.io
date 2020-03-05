@@ -10,13 +10,11 @@ function check() {
     document.body.clientHeight,
     document.documentElement.clientHeight
   );
-  console.log(scrollHeight + " - scrollHeight");
   if (
-    ((document.documentElement.clientHeight / 3) < window.pageYOffset) &&
-    ((scrollHeight - 340) > window.pageYOffset)
-  ) {
+    (document.documentElement.clientHeight / 3) <
+    window.pageYOffset) {
     btn.setAttribute("style", "visibility: visible;");
   } else {
     btn.setAttribute("style", "visibility: hidden;");
   }
-};
+}
