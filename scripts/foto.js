@@ -8,7 +8,7 @@ fetch(url)
     for (let i = 0; i < 24; i++) {
       let element = document.createElement("img");
       element.className = "scale";
-      element.setAttribute("src", `${outData[i]}`);
+      element.setAttribute("src", `${outData[i].photo}`);
       if (i % 2 == 0) {
         element.setAttribute(
           "style",
@@ -29,17 +29,18 @@ fetch(url)
       function setOver() {
         img[i].setAttribute(
           "style",
-          "transform: scale(1.9); z-index: 20; padding: 8px; transition: 0.5s; "
+          "transform: scale(1.9); z-index: 20; transition: 0.5s; "
         );
         img[i].addEventListener("mouseup", setOut);
-      function setOut() {
-        img[i].setAttribute(
-          "style",
-          `transform: rotate(${Math.round(Math.random() * 10)}deg); z-index: 1; transition: 0.2s; `
-        );
+        function setOut() {
+          img[i].setAttribute(
+            "style",
+            `transform: rotate(${Math.round(
+              Math.random() * 10
+            )}deg); z-index: 1; transition: 0.2s; `
+          );
+        }
       }
-      }
-     
     }
   })
   .catch(err => {
