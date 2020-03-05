@@ -1,6 +1,6 @@
 let url = "https://valkirijya.github.io/images/fo-galery/photo.json";
 let scale;
-let width = window.pageXOffset;
+let width = document.documentElement.clientWidth;
 if (570 < width) {
   scale = 1.8;
 } else if (320 < width < 570) {
