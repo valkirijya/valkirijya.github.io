@@ -12,39 +12,27 @@ figure {
   text-align: center;
   box-shadow: 10px -10px 23px 4px black;
 }
-
 figure img {
   width: 100%;
   border: 6px solid rgba(255, 255, 255, 0.781);
 }
-
 .description {
-  font-size: 1.5em;
   text-align: justify;
   padding: 15px 0 0 0;
   margin: 0;
 }
-
 figcaption {
   font-size: 1.2em;
 }
-
 .row {
   display: flex;
   flex-wrap: wrap;
   margin: 0 10px;
   justify-content: center;
 }
-
 .column {
   flex: 48%;
   max-width: 48%;
-}
-
-@media (max-width: 1086px) {
-  .description {
-    font-size: 1.4em;
-  }
 }
 
 @media (max-width: 835px) {
@@ -59,12 +47,10 @@ figcaption {
     padding: 0 5px;
   }
   .description {
-    font-size: 1.3em;
     padding: 5px;
     margin: 5px 0;
   }
 }
-
 @media (max-width: 660px) {
   h4 {
     font-size: 1.2em;

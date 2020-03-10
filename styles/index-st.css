@@ -1,12 +1,102 @@
-.selfi-im {
-    margin: 1vw;
-    border-radius: 50%;
-    border: 20px double rgba(10, 10, 10, 0.568);
-    width: 50%;
-  }
+ul.left-midle,
+ul.text {
+  font-size: 1.2em;
+  list-style: radial-gradient(rgb(255, 162, 162) 60%, rgb(122, 122, 121) 35%);
+  list-style-position: inside;
+  font-weight: bold;
+}
+.text {
+  padding: 20px;
+  text-align: justify;
+  height: calc(50% + 10vw);
+  background: rgba(255, 255, 255, 0.507);
+}
+ul.left-midle > li {
+  background: rgba(255, 255, 255, 0.507);
+  width: 98%;
+  padding: 10px;
+}
+ul.left-midle {
+  height: 36vw;
+  margin: 0;
+  padding-inline-start: 2%;
+  padding-inline-end: 1%;
+  margin: 0 0 2vw 0;
+}
+.scroll-selfi {
+  position: relative;
+  height: 46vw;
+  overflow: hidden;
+  background-image: url("../images/selfi.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center top;
+  background-size: 50%;
+  margin-top: -2.6vw;
+  box-shadow: 5px -5px 23px 2px black;
+  z-index: 15;
+}
+.background-romb {
+  background-image: url("../images/geometry.png");
+  background-clip: border-box;
+  background-attachment: fixed;
+  background-size: auto 100%;
+  margin-top: 1vw;
+}
+.background-grey {
+  background-color: rgba(133, 138, 138, 0.281);
+}
+.left-aside {
+  position: relative;
+  float: left;
+  width: 25%;
+  height: 42.4vw;
+  margin-top: 1vw;
+  z-index: 1;
+}
+.left-midle {
+  float: left;
+  width: 50%;
+}
+.section {
+  margin: 0;
+}
+.other {
+  background-color: rgba(133, 138, 138, 0.281);
+}
+h3.clear {
+  padding: 1vw;
+  margin: 0;
+}
 
-  .section {
-    text-align: center;
-    min-height: 60vw;
+@media (max-width: 1298px) {
+  ul.left-midle,
+  ul.text {
+    font-size: 1em;
   }
-  
+  .text {
+    padding: 10px;
+  }
+  ul.left-midle > li {
+    padding: 5px;
+  }
+}
+@media (max-width: 918px) {
+  .left-aside {
+    width: 100%;
+    height: auto;
+  }
+  .left-midle {
+    width: 100%;
+  }
+ul.left-midle, ul.text {
+  height: auto;
+}
+  .scroll-selfi {
+    height: 100vw;
+    background: url("../images/selfi.jpg") no-repeat center top fixed, url("../images/geometry.png");
+  }
+  .text {
+    height: calc(25% + 6vw);
+  }
+}
