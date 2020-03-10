@@ -82,6 +82,9 @@ h3.clear {
   }
 }
 @media (max-width: 918px) {
+  h3 {
+    font-size: 1.2em;
+  }
   .left-aside {
     width: 100%;
     height: auto;
@@ -97,6 +100,6 @@ ul.left-midle, ul.text {
     background: url("../images/selfi.jpg") no-repeat center top fixed, url("../images/geometry.png");
   }
   .text {
-    height: calc(25% + 6vw);
+    height: auto;
   }
 }
