@@ -1,29 +1,28 @@
-let foto = document.querySelectorAll(".fild>img");
 let butRight = document.querySelector(".right");
 let butLeft = document.querySelector(".left");
-let firstFoto = foto[0];
 
-console.log(foto);
-console.log(foto[0].attributes.src.nodeValue);
+let mas = [
+  "images/paint/0.jfif",
+  "images/paint/1.jfif",
+  "images/paint/2.jfif",
+  "images/paint/3.jfif",
+  "images/paint/4.jfif"
+];
+let current = 0;
 
-const stepLeft = () => {
-  for (let i = 1; i < 5; i++) {
-    if (currentFoto == foto[i]) {
-      currentFoto = foto[i - 1];
-      foto[i].setAttribute("src", `${foto[i - 1].attributes.src.nodeValue}`);
-    }
-  }
-  return currentFoto;
-};
-butLeft.addEventListener("click", stepLeft);
-
-const stepRight = () => {
-  for (let i = 0; i < 3; i++) {
-    if (firstFoto == foto[i]) {
-      firstFoto = foto[i + 1];
-      foto[i].setAttribute.src = `images/paint/${i + 1}.jfif`;
-    }
-  }
-  return firstFoto;
-};
 butRight.addEventListener("click", stepRight);
+function stepRight() {
+  let foto = document.querySelector(".fild > div > img");
+
+  if (current < mas.length - 1) current++;
+  else current = 0;
+  foto.src = mas[current];
+}
+
+butLeft.addEventListener("click", stepLeft);
+function stepLeft() {
+  let foto = document.querySelector(".fild > div > img");
+  if (current > 0) current--;
+  else current = mas.length - 1;
+  foto.src = mas[current];
+}

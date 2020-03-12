@@ -1,22 +1,26 @@
 .fild {
-  width: 1150px;
-  height: 500px;
+  max-width: 60vw;
+  height: 40vw;
+  min-height: 280px;
+  max-height: 40vw;
   border: 3px solid black;
   margin: 3% auto;
   background-image: url("../images/geometric.png");
   background-size: cover;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
-.fild > img {
-  height: 494px;
-  
+.fild > div > img {
+  max-height: 100%;
+}
+.fild > div {
+  max-width: 34vw;
+  text-align: center;
 }
 .left,
 .right {
-  position: absolute;
-  top: 574px;
+  position: relative;
+  top: 45%;
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -25,10 +29,16 @@
   padding: 0;
   text-align: center;
   border-style: none;
+  align-items: flex-end;
+  margin: 20px;
 }
-.left:hover,
+.left,
 .right:hover {
   cursor: pointer;
+}
+.left,
+.right:focus {
+  outline: none;
 }
 .right:hover img {
   left: 2px;
@@ -38,14 +48,6 @@
   right: 2px;
   transition: 2s ease-in-out;
 }
-.scale-left {
-  transform: skew(0deg, 10deg) scale(0.6);
-  left: 160px;
-}
-.scale-right {
-  transform: skew(0deg, -10deg) scale(0.6);
-  right: 160px;
-}
 button > img {
   width: 30px;
   height: 30px;
@@ -53,15 +55,21 @@ button > img {
   position: relative;
   margin: auto;
 }
-.left {
-  left: 120px;
-}
 .left > img {
   transform: rotateZ(270deg);
 }
-.right {
-  right: 120px;
-}
 .right > img {
   transform: rotateZ(90deg);
+}
+@media (max-width: 760px) {
+  .fild > div {
+    max-width: calc(64% + 2vw);
+  }
+  .fild {
+    max-width: calc(35% + 60vw);
+  }
+  .left,
+  .right {
+    margin: 0;
+  }
 }
