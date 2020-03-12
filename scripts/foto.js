@@ -26,10 +26,8 @@ fetch(url)
       par.innerText = `${outData[i].text}`;
       element.setAttribute("src", `${outData[i].photo}`);
       if (i % 2 == 0) {
-        div.setAttribute(
-          "style",
-          `transform: rotate(${Math.round(Math.random() * 10)}deg);`
-        );
+        div.style.transform = 
+          `rotate(${Math.round(Math.random() * 10)}deg);`;
       } else {
         div.setAttribute(
           "style",
