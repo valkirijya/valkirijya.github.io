@@ -26,6 +26,7 @@ ul.left-midle {
 .scroll-selfi {
   position: relative;
   height: 46vw;
+  
   overflow: hidden;
   background-image: url("../images/selfi.jpg");
   background-repeat: no-repeat;
@@ -38,7 +39,7 @@ ul.left-midle {
 }
 .background-romb {
   background-image: url("../images/geometry.png");
-  background-clip: border-box;
+  background-clip: padding-box;
   background-attachment: fixed;
   background-size: auto 100%;
   margin-top: 1vw;
@@ -51,6 +52,7 @@ ul.left-midle {
   float: left;
   width: 25%;
   height: 42.4vw;
+  max-height: 700px;
   margin-top: 1vw;
   z-index: 1;
 }
@@ -68,7 +70,11 @@ h3.clear {
   padding: 1vw;
   margin: 0;
 }
-
+@media (min-width: 1367px) {
+  .scroll-selfi {
+    margin-top: calc(1% - 38px);
+  }
+}
 @media (max-width: 1298px) {
   ul.left-midle,
   ul.text {
@@ -92,14 +98,16 @@ h3.clear {
   .left-midle {
     width: 100%;
   }
-ul.left-midle, ul.text {
-  height: auto;
-}
+  ul.left-midle,
+  ul.text {
+    height: auto;
+  }
   .scroll-selfi {
     margin-top: 0;
     background-size: 100%;
     height: 100vw;
-    background: url("../images/selfi.jpg") no-repeat center top fixed, url("../images/geometry.png");
+    background: url("../images/selfi.jpg") no-repeat center top fixed,
+      url("../images/geometry.png");
   }
   .text {
     height: auto;

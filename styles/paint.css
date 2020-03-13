@@ -61,6 +61,11 @@ button > img {
 .right > img {
   transform: rotateZ(90deg);
 }
+@media (min-width: 1367px) {
+    .fild {
+        max-width: 1200px;
+    }
+}
 @media (max-width: 760px) {
   .fild > div {
     max-width: calc(64% + 2vw);

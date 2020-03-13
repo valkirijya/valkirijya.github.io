@@ -53,7 +53,10 @@ form {
   box-shadow: 0px 0px 10px 6px #f8fcfc;
   color: #fff;
 }
-
+@media (min-width: 1367px) {
+  form {
+      height: 30vw;}
+}
 @media (max-width: 920px) {
   form {
     font-size: 1.2em;

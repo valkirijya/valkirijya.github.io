@@ -9,7 +9,9 @@
   font-weight: bold;
 }
 html {
+  max-width: 1366px;
   scroll-behavior: smooth;
+  margin: auto;
 }
 * {
   box-sizing: border-box;
@@ -29,6 +31,7 @@ body {
 .navigation {
   font-size: 1.8em;
   width: 100%;
+  max-width: 1366px;
   padding: 5px;
   position: fixed;
   top: 7px;
@@ -148,7 +151,7 @@ rect,
 }
 .favicon:hover {
   transform: scale(1.1);
-  animation: roll 1s ease-in 0s infinite normal;
+  animation: roll 3s ease-in 0s infinite normal;
 }
 
 @keyframes roll {
@@ -319,6 +322,17 @@ p {
   font-size: medium;
 }
 /*//////////////////////////Адаптивность////////////////////*/
+@media (min-width: 1367px) {
+  .footer {
+    padding: 5.5px 43.5px 0 10.9px;
+  }
+  .footer > img.im-float {
+    height: 54.6px;
+  }
+  .footer > address {
+    margin: auto 41px auto 5px;
+  }
+}
 @media (max-width: 1100px) {
   .navigation {
     font-size: 1.6em;
