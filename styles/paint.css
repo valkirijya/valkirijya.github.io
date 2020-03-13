@@ -9,9 +9,20 @@
   background-size: cover;
   display: flex;
   justify-content: space-between;
+  box-shadow: 10px -10px 23px 4px black;
 }
 .fild > div > img {
   max-height: 100%;
+  box-shadow: 10px -10px 23px 4px black;
+}
+
+@keyframes shadow {
+  0% {
+    box-shadow: none;
+  }
+  100% {
+    box-shadow: 10px -10px 23px 4px black;
+  }
 }
 .fild > div {
   max-width: 34vw;
@@ -62,9 +73,9 @@ button > img {
   transform: rotateZ(90deg);
 }
 @media (min-width: 1367px) {
-    .fild {
-        max-width: 1200px;
-    }
+  .fild {
+    max-width: 1200px;
+  }
 }
 @media (max-width: 760px) {
   .fild > div {
