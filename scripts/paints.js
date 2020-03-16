@@ -10,22 +10,25 @@ let mas = [
 ];
 let current = 0;
 
-butRight.addEventListener("click", stepRight);
-function stepRight() {
+const stepRight = () => {
   let foto = document.querySelector(".fild > div > img");
   if (current < mas.length - 1) current++;
   else current = 0;
   foto.src = mas[current];
-  foto.style.boxShadow = "unset";
-  foto.style.animation = "shadow 1s ease-in-out 0s 1 normal forwards";
- }
+  /*
+  foto.className = "shadow";
+  const unsetShadow = () => {
+    foto.style.animation = "unset";
+  };
+  butRight.addEventListener("click", unsetShadow);
+  setTimeout(unsetShadow, 5000);*/
+};
+butRight.addEventListener("click", stepRight);
 
-butLeft.addEventListener("click", stepLeft);
-function stepLeft() {
+const stepLeft = () => {
   let foto = document.querySelector(".fild > div > img");
   if (current > 0) current--;
   else current = mas.length - 1;
   foto.src = mas[current];
-  foto.style.animation = "shadow 2s ease-in-out 0s 1 normal forwards";
-  foto.style.animationPlayState = "running";
-}
+};
+butLeft.addEventListener("click", stepLeft);

@@ -1,6 +1,7 @@
 let url = "https://valkirijya.github.io/images/fo-galery/photo.json";
-let scale;
 let width = document.documentElement.clientWidth;
+let scale;
+
 if (540 < width) {
   scale = 1.8;
 } else if (420 < width < 540) {
@@ -39,18 +40,20 @@ fetch(url)
     for (let i = 0; i < img.length; i++) {
       img[i].addEventListener("mousedown", setOver);
       function setOver() {
-        img[i].setAttribute(
-          "style",
-          `transform: scale(${scale}); z-index: 20; transition: 0.5s;`
-        );
+        img[
+          i
+        ].style = `transform: scale(${scale}); z-index: 20; transition: 0.5s;`;
         img[i].addEventListener("mouseup", setOut);
         function setOut() {
-          img[i].setAttribute(
-            "style",
-            `transform: rotate(${Math.round(
+          if (i % 2 == 0) {
+            img[i].style = `transform: rotate(-${Math.round(
               Math.random() * 10
-            )}deg); z-index: 1; transition: 0.2s; `
-          );
+            )}deg); z-index: 1; transition: 0.2s;`;
+          } else {
+            img[i].style = `transform: rotate(${Math.round(
+              Math.random() * 10
+            )}deg); z-index: 1; transition: 0.2s;`;
+          }
         }
       }
     }

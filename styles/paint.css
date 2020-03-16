@@ -1,21 +1,22 @@
 .fild {
-  max-width: 60vw;
+  display: flex;
+  justify-content: space-between;
   height: 40vw;
   min-height: 280px;
   max-height: 40vw;
-  border: 3px solid black;
+  max-width: 60vw;
   margin: 3% auto;
+  border: 3px solid black;
   background-image: url("../images/geometric.png");
   background-size: cover;
-  display: flex;
-  justify-content: space-between;
   box-shadow: 10px -10px 23px 4px black;
 }
 .fild > div > img {
   max-height: 100%;
-  box-shadow: 10px -10px 23px 4px black;
 }
-
+.shadow {
+  animation: shadow 2s ease-in-out 0s 1 normal forwards;
+}
 @keyframes shadow {
   0% {
     box-shadow: none;
@@ -34,14 +35,14 @@
   top: 45%;
   width: 40px;
   height: 40px;
-  border-radius: 50%;
-  box-shadow: 3px -3px 12px 2px black;
-  background-color: rgba(219, 218, 218, 0.541);
+  margin: 20px;
   padding: 0;
   text-align: center;
   border-style: none;
+  border-radius: 50%;
   align-items: flex-end;
-  margin: 20px;
+  box-shadow: 3px -3px 12px 2px black;
+  background-color: rgba(219, 218, 218, 0.541);
 }
 .left,
 .right:hover {
@@ -60,10 +61,10 @@
   transition: 2s ease-in-out;
 }
 button > img {
-  width: 30px;
-  height: 30px;
   display: block;
   position: relative;
+  height: 30px;
+  width: 30px;
   margin: auto;
 }
 .left > img {

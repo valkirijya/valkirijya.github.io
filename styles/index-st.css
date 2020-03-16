@@ -1,48 +1,41 @@
 ul.left-midle,
 ul.text {
   font-size: 1.2em;
+  font-weight: bold;
   list-style: radial-gradient(rgb(255, 162, 162) 60%, rgb(122, 122, 121) 35%);
   list-style-position: inside;
-  font-weight: bold;
 }
 .text {
+  height: calc(50% + 10vw);
   padding: 20px;
   text-align: justify;
-  height: calc(50% + 10vw);
   background: rgba(255, 255, 255, 0.507);
 }
 ul.left-midle > li {
-  background: rgba(255, 255, 255, 0.507);
   width: 98%;
   padding: 10px;
+  background: rgba(255, 255, 255, 0.507);
 }
 ul.left-midle {
   height: 36vw;
-  margin: 0;
+  margin: 0 0 2vw 0;
   padding-inline-start: 2%;
   padding-inline-end: 1%;
-  margin: 0 0 2vw 0;
 }
 .scroll-selfi {
   position: relative;
   height: 46vw;
-  
-  overflow: hidden;
-  background-image: url("../images/selfi.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center top;
-  background-size: 50%;
   margin-top: -2.6vw;
+  overflow: hidden;
+  background: url("../images/selfi.jpg") no-repeat fixed center top;
+  background-size: 50%;
   box-shadow: 5px -5px 23px 2px black;
   z-index: 15;
 }
 .background-romb {
-  background-image: url("../images/geometry.png");
-  background-clip: padding-box;
-  background-attachment: fixed;
-  background-size: auto 100%;
   margin-top: 1vw;
+  background: url("../images/geometry.png") padding-box fixed;
+  background-size: auto 100%;
 }
 .background-grey {
   background-color: rgba(133, 138, 138, 0.281);
@@ -103,9 +96,9 @@ h3.clear {
     height: auto;
   }
   .scroll-selfi {
+    height: 100vw;
     margin-top: 0;
     background-size: 100%;
-    height: 100vw;
     background: url("../images/selfi.jpg") no-repeat center top fixed,
       url("../images/geometry.png");
   }
