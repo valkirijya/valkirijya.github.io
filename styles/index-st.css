@@ -1,46 +1,12 @@
-ul.left-midle,
-ul.text {
-  font-size: 1.2em;
-  font-weight: bold;
-  list-style: radial-gradient(rgb(255, 162, 162) 60%, rgb(122, 122, 121) 35%);
-  list-style-position: inside;
+.section {
+  margin: 0;
 }
-.text {
-  height: calc(50% + 10vw);
-  padding: 20px;
-  text-align: justify;
-  background: rgba(255, 255, 255, 0.507);
+.box {
+  max-width: 1366px;
+  height: 600px;
+  margin: 3vw 0 1vw 0;
 }
-ul.left-midle > li {
-  width: 98%;
-  padding: 10px;
-  background: rgba(255, 255, 255, 0.507);
-}
-ul.left-midle {
-  height: 36vw;
-  margin: 0 0 2vw 0;
-  padding-inline-start: 2%;
-  padding-inline-end: 1%;
-}
-.scroll-selfi {
-  position: relative;
-  height: 46vw;
-  margin-top: -2.6vw;
-  overflow: hidden;
-  background: url("../images/selfi.jpg") no-repeat fixed center top;
-  background-size: 50%;
-  box-shadow: 5px -5px 23px 2px black;
-  z-index: 15;
-}
-.background-romb {
-  margin-top: 1vw;
-  background: url("../images/geometry.png") padding-box fixed;
-  background-size: auto 100%;
-}
-.background-grey {
-  background-color: rgba(133, 138, 138, 0.281);
-}
-.left-aside {
+.aside {
   position: relative;
   float: left;
   width: 25%;
@@ -49,58 +15,88 @@ ul.left-midle {
   margin-top: 1vw;
   z-index: 1;
 }
-.left-midle {
+h3 {
+  box-shadow: 6px -6px 26px 6px #06070769;
+}
+.text {
+  height: calc(50% + 120px);
+  padding: 20px;
+  text-align: justify;
+  background: rgba(255, 255, 255, 0.507);
+}
+.midle {
   float: left;
   width: 50%;
 }
-.section {
-  margin: 0;
-}
-.other {
-  background-color: rgba(133, 138, 138, 0.281);
+.selfi {
+  height: 45vw;
+  margin: 1.5vw 0;
+  background: url("../images/selfi.jpg") no-repeat center;
+  background-size: cover;
+  box-shadow: 5px -5px 23px 4px black;
+  z-index: 15;
 }
 h3.clear {
   padding: 1vw;
   margin: 0;
 }
+ul.midle {
+  height: 80%;
+  padding-inline-start: 2%;
+  padding-inline-end: 1%;
+  background: url("../images/geometry.png") padding-box fixed;
+  background-size: auto 100%;
+}
+ul.midle,
+ul.text {
+  font-size: 1.2em;
+  font-weight: bold;
+  list-style: radial-gradient(rgb(255, 162, 162) 60%, rgb(122, 122, 121) 35%);
+  list-style-position: inside;
+}
+ul.midle > li {
+  width: 98%;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.507);
+}
+
+/*////////////////////////////Адаптивность////////////////////////////*/
 @media (min-width: 1367px) {
   .scroll-selfi {
-    margin-top: calc(1% - 38px);
   }
 }
 @media (max-width: 1298px) {
-  ul.left-midle,
+  .box {
+    height: 450px;
+  }
+  ul.midle,
   ul.text {
     font-size: 1em;
   }
   .text {
     padding: 10px;
   }
-  ul.left-midle > li {
+  ul.midle > li {
     padding: 5px;
   }
 }
-@media (max-width: 918px) {
+@media (max-width: 1115px) {
   h3 {
     font-size: 1.2em;
   }
-  .left-aside {
+  .aside {
     width: 100%;
     height: auto;
   }
-  .left-midle {
+  .midle {
     width: 100%;
   }
-  ul.left-midle,
+  ul.midle,
   ul.text {
     height: auto;
   }
-  .scroll-selfi {
+  .selfi {
     height: 100vw;
-    margin-top: 0;
-    background-size: 100%;
-    background: url("../images/selfi.jpg") no-repeat center top fixed,
-      url("../images/geometry.png");
   }
   .text {
     height: auto;
