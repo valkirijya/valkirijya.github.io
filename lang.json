@@ -1,0 +1,20 @@
+{
+  "rus" : [
+    {
+      "pos_0" : "Страница 1",
+      "pos_1" : "Страница 2",
+      "pos_2" : "Страница 3",
+      "pos_3" : "Заголовок 1",
+      "pos_4" : "Повседневная практика показывает, что дальнейшее развитие различных форм деятельности способствует подготовки и реализации существенных финансовых и административных условий. Не следует, однако забывать, что рамки и место обучения кадров требуют от нас анализа соответствующий условий активизации."
+    }
+  ],
+  "eng" : [
+    {
+      "pos_0" : "Page 1",
+      "pos_1" : "Page 2",
+      "pos_2" : "Page 3",
+      "pos_3" : "Heading 1",
+      "pos_4" : "Everyday practice shows that the further development of various forms of activity contributes to the preparation and implementation of significant financial and administrative conditions. It should not be forgotten, however, that the scope and place of training requires us to analyze the appropriate conditions for activation."
+    }
+  ]
+}
