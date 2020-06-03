@@ -14,9 +14,13 @@
 .fild > div > img {
   max-height: 100%;
 }
+.non-shadow{
+  animation: none;
+}
 .shadow {
   animation: shadow 2s ease-in-out 0s 1 normal forwards;
 }
+
 @keyframes shadow {
   0% {
     box-shadow: none;

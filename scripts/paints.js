@@ -15,13 +15,12 @@ const stepRight = () => {
   if (current < mas.length - 1) current++;
   else current = 0;
   foto.src = mas[current];
-  /*
-  foto.className = "shadow";
-  const unsetShadow = () => {
-    foto.style.animation = "unset";
-  };
-  butRight.addEventListener("click", unsetShadow);
-  setTimeout(unsetShadow, 5000);*/
+
+  // foto.classList.add('non-shadow');
+  foto.classList.remove('shadow');
+  foto.classList.add('shadow');
+  // foto.classList.toggle('non-shadow');
+  
 };
 butRight.addEventListener("click", stepRight);
 

@@ -1,6 +1,6 @@
 form {
   position: relative;
-  height: 400px;
+  height: auto;
   width: 50vw;
   margin: 7% auto 50px auto;
   padding: 20px;
@@ -15,6 +15,13 @@ form {
   background-attachment: local;
   background-size: 111%;
   box-shadow: 10px -10px 23px 4px black;
+}
+.message {
+  display: inline-block;
+  padding: 1vw;
+  font-size: 1em;
+  background-color: rgba(165, 172, 172, 0.281);
+  visibility: hidden;
 }
 #name,
 #email,
