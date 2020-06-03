@@ -77,10 +77,11 @@
       <p class="hed">Есть вопросы - пишите</p>
     </section>
     <section class="section">
-      <form>
+      <form class="contacts" action method="POST">
         <div>
           <input
             id="name"
+            name="name"
             type="text"
             placeholder="Ваше имя"
             autofocus
@@ -88,8 +89,8 @@
           />
           <input
             id="email"
-            type="email"
             name="email"
+            type="email"
             placeholder="email@example.com"
             required
           />
@@ -98,12 +99,12 @@
           <label for="text">Текст сообщения:<br /></label>
           <textarea
             id="text"
-            name="message"
+            name="text"
             placeholder="Пишите возникшие вопросы в этом месте"
             required
           ></textarea>
         </div>
-        <p></p>
+        <p class="message"></p>
         <br />
         <div>
           <input id="submit" type="submit" value="Отправить" />
