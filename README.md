@@ -1,1 +1,1 @@
-# valkirijya.github.io - my first cite
+# valkirijya.github.io - my first website
