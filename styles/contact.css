@@ -58,7 +58,7 @@ form {
 }
 @media (min-width: 1367px) {
   form {
-    height: 30vw;
+    height: 32vw;
   }
 }
 @media (max-width: 920px) {
