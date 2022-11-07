@@ -13,8 +13,8 @@ if (540 < width) {
 }
 
 fetch(url)
-  .then(res => res.json())
-  .then(out => {
+  .then((res) => res.json())
+  .then((out) => {
     console.log("Checkout this JSON! ", out);
     let outData = out;
     for (let i = 0; i < 24; i++) {
@@ -58,6 +58,6 @@ fetch(url)
       }
     }
   })
-  .catch(err => {
+  .catch((err) => {
     throw err;
   });

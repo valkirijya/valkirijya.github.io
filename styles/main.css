@@ -9,7 +9,7 @@
   font-weight: bold;
 }
 html {
-  max-width: 1366px;
+  max-width: 1920px;
   scroll-behavior: smooth;
   margin: auto;
 }
@@ -30,7 +30,6 @@ body {
   position: fixed;
   top: 7px;
   width: 100%;
-  max-width: 1366px;
   padding: 5px;
   font-size: 1.8em;
   letter-spacing: 0.5em;
