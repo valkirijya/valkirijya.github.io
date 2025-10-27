@@ -1,2 +1,2 @@
 
-# valkirijya.github.io - my personal website
+# valkirijya.github.io - my first website
